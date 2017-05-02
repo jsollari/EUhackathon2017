@@ -1,0 +1,20 @@
+
+Call:
+multivar(formula = migrt_Y15_24 ~ 1 + pop_Y0_14 + ARPR_socexcl + 
+    GDP, data = dat1, size = nn_size, decay = nn_decay, maxit = nn_maxit, 
+    abstol = nn_abstol, reltol = nn_reltol, trace = FALSE)
+
+Residuals:
+          [,1]
+Min    -0.7737
+1Q     -0.4334
+Median -0.1149
+3Q      0.3303
+Max     1.6478
+
+No Coefficients
+
+Residual standard error: 0.5834 on 24 degrees of freedom
+Multiple R-squared:  0.7581,	Adjusted R-squared:  0.7278 
+F-statistic: 25.07 on 3 and 24 DF,  p-value: 1.428e-07
+

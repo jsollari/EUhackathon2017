@@ -1,0 +1,21 @@
+
+Call:
+multivar(formula = lmktm_OC2 ~ 1 + mat_depriv + ARPR_socexcl + 
+    emp_Y25_64_NaceK + emp_Y25_64_NaceL, data = dat1, size = nn_size, 
+    decay = nn_decay, maxit = nn_maxit, abstol = nn_abstol, reltol = nn_reltol, 
+    trace = FALSE)
+
+Residuals:
+         [,1]
+Min    -8.900
+1Q     -3.682
+Median  0.818
+3Q      3.876
+Max     9.169
+
+No Coefficients
+
+Residual standard error: 5.641 on 18 degrees of freedom
+Multiple R-squared:  0.8786,	Adjusted R-squared:  0.8517 
+F-statistic: 32.58 on 4 and 18 DF,  p-value: 5.092e-08
+

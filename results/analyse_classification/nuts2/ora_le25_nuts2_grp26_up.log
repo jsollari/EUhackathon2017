@@ -1,0 +1,13 @@
+Sets to variables test for over-representation
+76 variables tested, 8 have p < 0.05 
+Selected set size: 8 
+    Universe size: 276 
+                vars         pval        adjp      odds      exp obs size
+1          emp_YGE65 6.383776e-05 0.003422380       Inf 2.463768   8   85
+2         pop_Y25-64 1.234729e-04 0.003422380       Inf 2.666667   8   92
+3       earn_OC6_P-S 1.350939e-04 0.003422380       Inf 2.695652   8   93
+4       earn_OC2_P-S 1.917078e-04 0.003642449       Inf 2.811594   8   97
+5   emp_Y15-24_ED0-2 8.643872e-04 0.013138686 18.698630 2.318841   7   80
+6 emp_Y15-24_NaceB-E 5.920422e-03 0.074992012  8.652174 2.173913   6   75
+7 emp_Y15-24_NaceM_N 9.977161e-03 0.108323458  7.091503 1.623188   5   56
+8              GVAgr 1.434748e-02 0.136301102  6.882353 1.101449   4   38

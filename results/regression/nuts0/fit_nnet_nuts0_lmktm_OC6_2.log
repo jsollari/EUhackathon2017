@@ -1,0 +1,22 @@
+
+Call:
+multivar(formula = lmktm_OC6 ~ 1 + low_work + ARPR_socexcl, data = dat1, 
+    size = nn_size, decay = nn_decay, maxit = nn_maxit, abstol = nn_abstol, 
+    reltol = nn_reltol, trace = FALSE)
+
+Residuals:
+        [,1]
+[1,]  1.5518
+[2,] -0.6311
+[3,]  1.7744
+[4,] -0.4655
+[5,] -0.8568
+[6,] -2.7664
+[7,]  1.3847
+
+No Coefficients
+
+Residual standard error: 2.03 on 4 degrees of freedom
+Multiple R-squared:  0.9887,	Adjusted R-squared:  0.983 
+F-statistic: 174.8 on 2 and 4 DF,  p-value: 0.0001279
+

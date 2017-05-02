@@ -1,0 +1,11 @@
+glmulti.analysis
+Method: h / Fitting: multivar / IC used: aicc
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: 62.0597821264834
+Best model:
+[1] "mismatch ~ 1 + pop_Y15_24 + emp_Y15_24 + emp_Y15_24_NaceM_N"
+Evidence weight: 0.903739013374651
+Worst IC: 81.4744468329663
+1 models within 2 IC units.
+3 models to reach 95% of evidence weight.

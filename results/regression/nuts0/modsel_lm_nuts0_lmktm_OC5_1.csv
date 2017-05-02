@@ -1,0 +1,5 @@
+"","model","aicc","weights"
+"1","lmktm_OC5 ~ 1 + mat_depriv + ARPR_socexcl + emp_Y25_64_NaceK + emp_Y25_64_NaceL",164.512808780655,0.084289661909731
+"2","lmktm_OC5 ~ 1 + emp_Y15_24_NaceB_E + emp_Y15_24_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceJ + emp_Y15_24_NaceR_U + GDP",165.421119116068,0.0535226032460353
+"3","lmktm_OC5 ~ 1 + mat_depriv + ARPR_socexcl + emp_Y25_64_ED3_4 + emp_Y25_64_NaceK + emp_Y25_64_NaceL",165.839347980868,0.0434230159888133
+"4","lmktm_OC5 ~ 1 + emp_Y25_64_ED5_8 + emp_Y15_24_NaceB_E + emp_Y15_24_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceJ + emp_Y15_24_NaceR_U + GDP",166.055024061133,0.0389840108057578

@@ -1,0 +1,23 @@
+
+Call:
+multivar(formula = migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + 
+    pop_Y25_64 + pop_Y65_74 + pop_YGE75 + emp_Y25_64_ED0_2 + 
+    emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64 + 
+    emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training, 
+    data = dat1, size = nn_size, decay = nn_decay, maxit = nn_maxit, 
+    abstol = nn_abstol, reltol = nn_reltol, trace = FALSE)
+
+Residuals:
+            [,1]
+Min    -0.660711
+1Q     -0.136396
+Median  0.001805
+3Q      0.101003
+Max     1.801398
+
+No Coefficients
+
+Residual standard error: 0.3165 on 82 degrees of freedom
+Multiple R-squared:  0.7155,	Adjusted R-squared:  0.6634 
+F-statistic: 13.75 on 15 and 82 DF,  p-value: < 2.2e-16
+

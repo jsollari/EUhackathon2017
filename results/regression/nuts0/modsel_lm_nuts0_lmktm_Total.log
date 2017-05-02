@@ -1,0 +1,12 @@
+consensus of 2-../results/regression/nuts0/modsel_lm_nuts0_lmktm_Total_rep1_2
+Method: r / Fitting: lm / IC used: aicc
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: 176.387222215493
+Best model:
+[1] "lmktm_Total ~ 1 + pop_Y15_24 + mat_depriv + emp_Y15_24_NaceB_E + "
+[2] "    emp_Y25_64_NaceG_I + emp_Y25_64_NaceK + emp_Y25_64_NaceL"     
+Evidence weight: 0.0775890416857141
+Worst IC: 183.759609070286
+9 models within 2 IC units.
+78 models to reach 95% of evidence weight.

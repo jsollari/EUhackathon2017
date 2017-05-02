@@ -1,0 +1,10 @@
+a 5-3-1 network with 22 weights
+options were - linear output units  decay=1e-04
+ b->h1 i1->h1 i2->h1 i3->h1 i4->h1 i5->h1 
+ -1.84   2.63  -0.23  -4.76   8.08   4.59 
+ b->h2 i1->h2 i2->h2 i3->h2 i4->h2 i5->h2 
+  0.33  -1.47  -3.82  -7.65   2.28   2.29 
+ b->h3 i1->h3 i2->h3 i3->h3 i4->h3 i5->h3 
+  3.20  -3.86  -5.67  -3.78  -5.56  -1.44 
+ b->o h1->o h2->o h3->o 
+ 3.61 -5.11  6.83 -5.66 

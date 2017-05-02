@@ -1,0 +1,11 @@
+glmulti.analysis
+Method: h / Fitting: multinom / IC used: aic
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: 198.738721306865
+Best model:
+[1] "grps ~ 1 + emp_Y25_64_ED0_2 + emp_Y15_24 + training"
+Evidence weight: 0.687430978506695
+Worst IC: 246.186329193689
+2 models within 2 IC units.
+1 models to reach 95% of evidence weight.

@@ -1,0 +1,18 @@
+
+Call:
+multivar(formula = lmktm_OC0 ~ 1, data = dat1, size = nn_size, 
+    decay = nn_decay, maxit = nn_maxit, abstol = nn_abstol, reltol = nn_reltol, 
+    trace = FALSE)
+
+Residuals:
+       [,1]
+[1,]  8.690
+[2,] -1.714
+[3,] -6.199
+[4,] -7.230
+[5,]  6.455
+
+No Coefficients
+
+Residual standard error: 7.26 on 4 degrees of freedom
+

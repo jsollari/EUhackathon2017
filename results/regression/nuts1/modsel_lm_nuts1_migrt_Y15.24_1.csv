@@ -1,0 +1,13 @@
+"","model","aicc","weights"
+"1","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceO_Q",162.022038516362,0.0453989918691033
+"2","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_Y65_74 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceO_Q",162.590655412263,0.0341643072464238
+"3","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceO_Q",162.697180747854,0.032392236617885
+"4","migrt_Y15_24 ~ 1 + pop_Total + pop_Y15_24 + pop_Y25_64 + pop_Y65_74 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceO_Q",162.723868812372,0.0319628647150506
+"5","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_Y25_64 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceO_Q",162.734204641342,0.0317981094507376
+"6","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q",163.178771833541,0.0254603729294952
+"7","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceO_Q + GDP",163.245371901185,0.0246265026585285
+"8","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_Y65_74 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q",163.497178115368,0.0217131941207269
+"9","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q",163.86906426929,0.0180289179727473
+"10","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_Y65_74 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceO_Q",163.880580985573,0.017925399340883
+"11","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_Y25_64 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceO_Q",163.909442709312,0.0176685779132105
+"12","migrt_Y15_24 ~ 1 + pop_Total + pop_Y15_24 + pop_Y25_64 + pop_Y65_74 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q",163.975471327632,0.0170947858103565

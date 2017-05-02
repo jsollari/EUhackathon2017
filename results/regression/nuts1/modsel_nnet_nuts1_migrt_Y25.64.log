@@ -1,0 +1,14 @@
+glmulti.analysis
+Method: h / Fitting: multivar / IC used: aicc
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: -77.8020616552247
+Best model:
+[1] "migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + pop_Y25_64 + pop_Y65_74 + "        
+[2] "    pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + "    
+[3] "    emp_FT + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + "
+[4] "    GDP + training"                                                           
+Evidence weight: 0.256344000418763
+Worst IC: -58.8851370412674
+2 models within 2 IC units.
+22 models to reach 95% of evidence weight.

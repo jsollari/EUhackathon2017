@@ -1,0 +1,26 @@
+Neural Network 
+
+92 samples
+ 3 predictor
+
+No pre-processing
+Resampling: Bootstrapped (100 reps) 
+Summary of sample sizes: 92, 92, 92, 92, 92, 92, ... 
+Resampling results across tuning parameters:
+
+  size  RMSE       Rsquared 
+   1    0.1172655  0.4518503
+   3    0.1363239  0.3902627
+   6    0.1592267  0.3058166
+   9    0.1648580  0.3140229
+  12    0.1601425  0.3200018
+  15    0.1608844  0.3209066
+  18    0.1619366  0.3155305
+  21    0.1647172  0.3109203
+  24    0.1662936  0.3223717
+  27    0.1631303  0.3224136
+  30    0.1628101  0.3262745
+
+Tuning parameter 'decay' was held constant at a value of 1e-04
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were size = 1 and decay = 1e-04. 

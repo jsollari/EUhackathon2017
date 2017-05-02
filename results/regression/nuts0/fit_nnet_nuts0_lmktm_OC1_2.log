@@ -1,0 +1,22 @@
+
+Call:
+multivar(formula = lmktm_OC1 ~ 1 + pop_Y0_14 + pop_Y15_24 + low_work + 
+    emp_Y25_64_NaceB_E + emp_Y25_64_NaceG_I + emp_Y25_64_NaceK + 
+    unemp_Y15_24, data = dat1, size = nn_size, decay = nn_decay, 
+    maxit = nn_maxit, abstol = nn_abstol, reltol = nn_reltol, 
+    trace = FALSE)
+
+Residuals:
+          [,1]
+Min    -4.9502
+1Q     -1.6767
+Median -0.2856
+3Q      1.6370
+Max     4.7433
+
+No Coefficients
+
+Residual standard error: 3.446 on 12 degrees of freedom
+Multiple R-squared:  0.9763,	Adjusted R-squared:  0.9624 
+F-statistic: 70.56 on 7 and 12 DF,  p-value: 8.433e-09
+

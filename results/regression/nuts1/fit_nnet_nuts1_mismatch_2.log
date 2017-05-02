@@ -1,0 +1,20 @@
+
+Call:
+multivar(formula = mismatch ~ 1 + pop_Y25_64 + emp_FT, data = dat1, 
+    size = nn_size, decay = nn_decay, maxit = nn_maxit, abstol = nn_abstol, 
+    reltol = nn_reltol, trace = FALSE)
+
+Residuals:
+           [,1]
+Min    -21.9697
+1Q      -5.1901
+Median   0.7518
+3Q       8.7709
+Max     16.9413
+
+No Coefficients
+
+Residual standard error: 12.75 on 11 degrees of freedom
+Multiple R-squared:  0.6591,	Adjusted R-squared:  0.5971 
+F-statistic: 10.63 on 2 and 11 DF,  p-value: 0.00269
+

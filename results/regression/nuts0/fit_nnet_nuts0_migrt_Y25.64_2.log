@@ -1,0 +1,21 @@
+
+Call:
+multivar(formula = migrt_Y25_64 ~ 1 + pop_Total + emp_Y15_24_ED3_4 + 
+    emp_Y15_24_ED5_8 + emp_Y25_64_NaceB_E, data = dat1, size = nn_size, 
+    decay = nn_decay, maxit = nn_maxit, abstol = nn_abstol, reltol = nn_reltol, 
+    trace = FALSE)
+
+Residuals:
+           [,1]
+Min    -0.47607
+1Q     -0.15241
+Median -0.05814
+3Q      0.14951
+Max     0.60092
+
+No Coefficients
+
+Residual standard error: 0.2764 on 23 degrees of freedom
+Multiple R-squared:  0.919,	Adjusted R-squared:  0.9049 
+F-statistic: 65.23 on 4 and 23 DF,  p-value: 3.245e-12
+

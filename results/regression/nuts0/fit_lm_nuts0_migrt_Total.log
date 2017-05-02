@@ -1,0 +1,24 @@
+
+Call:
+lm(formula = form1, data = dat1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.5697 -0.1563  0.0440  0.1873  0.3589 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        -3.74246    0.73464  -5.094 4.80e-05 ***
+pop_Y15_24          0.23907    0.05687   4.204 0.000399 ***
+emp_YGE65           0.04920    0.01981   2.483 0.021560 *  
+emp_Y25_64_NaceF   -0.20472    0.06094  -3.359 0.002969 ** 
+emp_Y25_64_NaceG_I  0.13669    0.02943   4.645 0.000139 ***
+emp_Y25_64_NaceK    0.25781    0.04255   6.060 5.16e-06 ***
+emp_Y15_24_NaceO_Q -0.06991    0.02101  -3.327 0.003200 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2811 on 21 degrees of freedom
+Multiple R-squared:  0.8307,	Adjusted R-squared:  0.7824 
+F-statistic: 17.18 on 6 and 21 DF,  p-value: 4.084e-07
+

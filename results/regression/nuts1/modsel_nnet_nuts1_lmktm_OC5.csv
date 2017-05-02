@@ -1,0 +1,32 @@
+"","model","aicc","weights"
+"1","lmktm_OC5 ~ 1 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + GDP + training",576.040408280426,0.0277265672406445
+"2","lmktm_OC5 ~ 1 + pop_YGE75 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",576.158191623151,0.0261408542729925
+"3","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + GDP + training",576.243685183978,0.0250469636330178
+"4","lmktm_OC5 ~ 1 + pop_YGE75 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",576.539858939067,0.0215994041872269
+"5","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",576.807482906348,0.0188941763838215
+"6","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_Y25_64_NaceO_Q + GDP + training",576.807661929123,0.0188924852155661
+"7","lmktm_OC5 ~ 1 + pop_YGE75 + emp_FT + emp_Y25_64_NaceO_Q + GDP + training",576.823037404678,0.0187478016006983
+"8","lmktm_OC5 ~ 1 + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64_NaceO_Q + GDP",576.855322347451,0.0184475953045009
+"9","lmktm_OC5 ~ 1 + pop_YGE75 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + GDP + training",576.925567279765,0.0178109165748847
+"10","lmktm_OC5 ~ 1 + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",576.927142195911,0.0177968967455781
+"11","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",577.062380830114,0.0166332679772996
+"12","lmktm_OC5 ~ 1 + pop_Y65_74 + pop_YGE75 + emp_FT + emp_Y25_64_NaceO_Q + GDP + training",577.079167178183,0.0164942462971024
+"13","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_PT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",577.334417267538,0.0145179609072439
+"14","lmktm_OC5 ~ 1 + pop_Y15_24 + pop_Y25_64 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",577.341294143535,0.0144681275223993
+"15","lmktm_OC5 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64 + GDP",577.379668408801,0.0141931718811181
+"16","lmktm_OC5 ~ 1 + pop_Y65_74 + pop_YGE75 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",577.40471556969,0.0140165309484583
+"17","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",577.47836177891,0.0135097859829103
+"18","lmktm_OC5 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + emp_PT + GDP",577.583602298901,0.012817277308024
+"19","lmktm_OC5 ~ 1 + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64_NaceO_Q + GDP + training",577.604291228011,0.0126853728539318
+"20","lmktm_OC5 ~ 1 + pop_YGE75 + emp_FT + emp_PT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",577.66186242658,0.012325422344307
+"21","lmktm_OC5 ~ 1 + pop_Y15_24 + pop_Y25_64 + emp_FT + emp_Y25_64_NaceO_Q + GDP",577.748037345875,0.0118056298896181
+"22","lmktm_OC5 ~ 1 + pop_Y15_24 + pop_YGE75 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",577.787804644822,0.011573209226008
+"23","lmktm_OC5 ~ 1 + emp_Y25_64_ED0_2 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + GDP + training",577.80152897403,0.011494063824264
+"24","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_Y25_64_ED0_2 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + GDP + training",577.806030188535,0.0114682242890893
+"25","lmktm_OC5 ~ 1 + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",577.878441029011,0.0110604389725753
+"26","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",577.881314183632,0.0110445612044567
+"27","lmktm_OC5 ~ 1 + pop_YGE75 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",577.978240685475,0.010522068960071
+"28","lmktm_OC5 ~ 1 + pop_Y15_24 + emp_FT + emp_Y25_64_NaceO_Q + GDP",577.991885552983,0.0104505271637158
+"29","lmktm_OC5 ~ 1 + pop_Total + pop_Y15_24 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",577.995313373306,0.0104326312394018
+"30","lmktm_OC5 ~ 1 + emp_FT + emp_Y25_64_NaceO_Q + GDP + training",578.026883505705,0.0102692443932938
+"31","lmktm_OC5 ~ 1 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",578.032210446522,0.0102419289578134

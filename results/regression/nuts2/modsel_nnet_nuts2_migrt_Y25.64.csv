@@ -1,0 +1,7 @@
+"","model","aicc","weights"
+"1","migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + emp_Y25_64_ED0_2 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",136.627226793178,0.0666440327239239
+"2","migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",137.376788808854,0.0458137609426168
+"3","migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",137.957955413236,0.0342607779906563
+"4","migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + emp_Y25_64_ED0_2 + emp_Y25_64_ED5_8 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",138.074124169786,0.0323274535001844
+"5","migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + emp_Y25_64_ED0_2 + emp_Y25_64_ED5_8 + emp_FT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",138.12999979773,0.0314367945804783
+"6","migrt_Y25_64 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + pop_Y25_64 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",138.530426953632,0.0257327739611508

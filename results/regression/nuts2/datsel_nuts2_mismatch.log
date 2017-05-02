@@ -1,0 +1,91 @@
+[1] 276  15
+  [1] "AT11" "AT12" "AT13" "AT21" "AT22" "AT31" "AT32" "AT33" "AT34" "BE10" "BE21" "BE22" "BE23" "BE24" "BE25" "BE31" "BE32"
+ [18] "BE33" "BE34" "BE35" "BG31" "BG32" "BG33" "BG34" "BG41" "BG42" "CY00" "CZ01" "CZ02" "CZ03" "CZ04" "CZ05" "CZ06" "CZ07"
+ [35] "CZ08" "DE11" "DE12" "DE13" "DE14" "DE21" "DE22" "DE23" "DE24" "DE25" "DE26" "DE27" "DE30" "DE40" "DE50" "DE60" "DE71"
+ [52] "DE72" "DE73" "DE80" "DE91" "DE92" "DE93" "DE94" "DEA1" "DEA2" "DEA3" "DEA4" "DEA5" "DEB1" "DEB2" "DEB3" "DEC0" "DED2"
+ [69] "DED4" "DED5" "DEE0" "DEF0" "DEG0" "DK01" "DK02" "DK03" "DK04" "DK05" "EE00" "EL30" "EL41" "EL42" "EL43" "EL51" "EL52"
+ [86] "EL53" "EL54" "EL61" "EL62" "EL63" "EL64" "EL65" "ES11" "ES12" "ES13" "ES21" "ES22" "ES23" "ES24" "ES30" "ES41" "ES42"
+[103] "ES43" "ES51" "ES52" "ES53" "ES61" "ES62" "ES63" "ES64" "ES70" "FI19" "FI1B" "FI1C" "FI1D" "FI20" "FR10" "FR21" "FR22"
+[120] "FR23" "FR24" "FR25" "FR26" "FR30" "FR41" "FR42" "FR43" "FR51" "FR52" "FR53" "FR61" "FR62" "FR63" "FR71" "FR72" "FR81"
+[137] "FR82" "FR83" "FRA1" "FRA2" "FRA3" "FRA4" "FRA5" "HR03" "HR04" "HU10" "HU21" "HU22" "HU23" "HU31" "HU32" "HU33" "IE01"
+[154] "IE02" "ITC1" "ITC2" "ITC3" "ITC4" "ITF1" "ITF2" "ITF3" "ITF4" "ITF5" "ITF6" "ITG1" "ITG2" "ITH1" "ITH2" "ITH3" "ITH4"
+[171] "ITH5" "ITI1" "ITI2" "ITI3" "ITI4" "LT00" "LU00" "LV00" "MT00" "NL11" "NL12" "NL13" "NL21" "NL22" "NL23" "NL31" "NL32"
+[188] "NL33" "NL34" "NL41" "NL42" "PL11" "PL12" "PL21" "PL22" "PL31" "PL32" "PL33" "PL34" "PL41" "PL42" "PL43" "PL51" "PL52"
+[205] "PL61" "PL62" "PL63" "PT11" "PT15" "PT16" "PT17" "PT18" "PT20" "PT30" "RO11" "RO12" "RO21" "RO22" "RO31" "RO32" "RO41"
+[222] "RO42" "SE11" "SE12" "SE21" "SE22" "SE23" "SE31" "SE32" "SE33" "SI03" "SI04" "SK01" "SK02" "SK03" "SK04" "UKC1" "UKC2"
+[239] "UKD1" "UKD3" "UKD4" "UKD6" "UKD7" "UKE1" "UKE2" "UKE3" "UKE4" "UKF1" "UKF2" "UKF3" "UKG1" "UKG2" "UKG3" "UKH1" "UKH2"
+[256] "UKH3" "UKI3" "UKI4" "UKI5" "UKI6" "UKI7" "UKJ1" "UKJ2" "UKJ3" "UKJ4" "UKK1" "UKK2" "UKK3" "UKK4" "UKL1" "UKL2" "UKM2"
+[273] "UKM3" "UKM5" "UKM6" "UKN0"
+ [1] "pop_Total"          "pop_Y0-14"          "pop_Y15-24"         "pop_Y25-64"         "pop_Y65-74"         "pop_YGE75"         
+ [7] "emp_Y25-64_ED0-2"   "emp_Y25-64_ED3-4"   "emp_Y25-64_ED5-8"   "emp_FT"             "emp_PT"             "emp_Y25-64"        
+[13] "emp_Y25-64_NaceG-I" "emp_Y25-64_NaceO-Q" "GDP"               
+   pop_Total          pop_Y0-14       pop_Y15-24       pop_Y25-64      pop_Y65-74       pop_YGE75       emp_Y25-64_ED0-2
+ Min.   :   28916   Min.   :11.04   Min.   : 7.057   Min.   :36.82   Min.   : 1.672   Min.   : 0.9382   Min.   : 1.588  
+ 1st Qu.:  914534   1st Qu.:13.93   1st Qu.:10.555   1st Qu.:51.72   1st Qu.: 9.184   1st Qu.: 7.5636   1st Qu.: 8.113  
+ Median : 1463557   Median :15.38   Median :11.387   Median :54.33   Median :10.076   Median : 8.9254   Median :11.488  
+ Mean   : 1842407   Mean   :15.71   Mean   :11.310   Mean   :53.98   Mean   : 9.953   Mean   : 9.0386   Mean   :12.574  
+ 3rd Qu.: 2273454   3rd Qu.:16.90   3rd Qu.:12.218   3rd Qu.:55.92   3rd Qu.:10.933   3rd Qu.:10.5005   3rd Qu.:15.463  
+ Max.   :12088695   Max.   :44.13   Max.   :16.440   Max.   :62.36   Max.   :14.129   Max.   :15.0952   Max.   :43.406  
+ emp_Y25-64_ED3-4 emp_Y25-64_ED5-8     emp_FT          emp_PT          emp_Y25-64     emp_Y25-64_NaceG-I emp_Y25-64_NaceO-Q
+ Min.   :10.26    Min.   : 8.965   Min.   :21.00   Min.   : 0.9401   Min.   : 32.80   Min.   : 6.105     Min.   : 6.978    
+ 1st Qu.:26.75    1st Qu.:17.379   1st Qu.:42.43   1st Qu.: 6.1580   1st Qu.: 66.05   1st Qu.:14.060     1st Qu.:15.127    
+ Median :34.66    Median :23.102   Median :45.65   Median :10.5845   Median : 73.05   Median :15.668     Median :20.512    
+ Mean   :34.27    Mean   :23.842   Mean   :45.11   Mean   :12.0092   Mean   : 70.94   Mean   :15.991     Mean   :19.564    
+ 3rd Qu.:41.75    3rd Qu.:29.015   3rd Qu.:48.17   3rd Qu.:17.0879   3rd Qu.: 77.34   3rd Qu.:17.523     3rd Qu.:23.511    
+ Max.   :59.94    Max.   :55.101   Max.   :60.90   Max.   :34.4350   Max.   :103.48   Max.   :28.611     Max.   :34.246    
+      GDP        
+ Min.   :  8200  
+ 1st Qu.: 19775  
+ Median : 24550  
+ Mean   : 26457  
+ 3rd Qu.: 30825  
+ Max.   :148000  
+[1] 47 15
+ [1] "BG31" "BG32" "BG33" "BG34" "BG41" "BG42" "CZ01" "CZ02" "CZ03" "CZ04" "CZ05" "CZ06" "CZ07" "CZ08" "FI19" "FI1B" "FI1C" "FI1D"
+[19] "LV00" "PL11" "PL12" "PL21" "PL22" "PL31" "PL32" "PL33" "PL34" "PL41" "PL42" "PL43" "PL51" "PL52" "PL61" "PL62" "PL63" "RO11"
+[37] "RO12" "RO21" "RO22" "RO31" "RO32" "RO41" "RO42" "SK01" "SK02" "SK03" "SK04"
+ [1] "pop_Total"          "pop_Y0-14"          "pop_Y15-24"         "pop_Y25-64"         "pop_Y65-74"         "pop_YGE75"         
+ [7] "emp_Y25-64_ED0-2"   "emp_Y25-64_ED3-4"   "emp_Y25-64_ED5-8"   "emp_FT"             "emp_PT"             "emp_Y25-64"        
+[13] "emp_Y25-64_NaceG-I" "emp_Y25-64_NaceO-Q" "GDP"               
+   pop_Total         pop_Y0-14       pop_Y15-24       pop_Y25-64      pop_Y65-74       pop_YGE75      emp_Y25-64_ED0-2
+ Min.   : 625167   Min.   :12.58   Min.   : 8.753   Min.   :50.14   Min.   : 7.392   Min.   : 5.067   Min.   : 1.588  
+ 1st Qu.:1219324   1st Qu.:14.21   1st Qu.:10.574   1st Qu.:55.96   1st Qu.: 8.380   1st Qu.: 6.466   1st Qu.: 3.075  
+ Median :1615542   Median :15.02   Median :11.284   Median :56.55   Median : 9.292   Median : 7.223   Median : 5.245  
+ Mean   :1882277   Mean   :15.06   Mean   :11.256   Mean   :56.58   Mean   : 9.678   Mean   : 7.426   Mean   : 6.333  
+ 3rd Qu.:2277880   3rd Qu.:15.62   3rd Qu.:12.051   3rd Qu.:57.88   3rd Qu.:10.973   3rd Qu.: 8.087   3rd Qu.: 7.722  
+ Max.   :5309778   Max.   :17.91   Max.   :13.695   Max.   :62.36   Max.   :14.129   Max.   :10.682   Max.   :23.768  
+ emp_Y25-64_ED3-4 emp_Y25-64_ED5-8     emp_FT          emp_PT          emp_Y25-64    emp_Y25-64_NaceG-I emp_Y25-64_NaceO-Q
+ Min.   :28.32    Min.   : 9.802   Min.   :39.89   Min.   : 0.9401   Min.   :53.63   Min.   :11.00      Min.   : 6.978    
+ 1st Qu.:38.54    1st Qu.:14.797   1st Qu.:47.16   1st Qu.: 2.8540   1st Qu.:63.40   1st Qu.:13.31      1st Qu.:12.966    
+ Median :40.19    Median :18.480   Median :50.83   Median : 3.4485   Median :70.62   Median :14.63      Median :14.614    
+ Mean   :42.79    Mean   :20.247   Mean   :51.26   Mean   : 4.1905   Mean   :69.38   Mean   :15.39      Mean   :14.594    
+ 3rd Qu.:45.90    3rd Qu.:24.029   3rd Qu.:55.26   3rd Qu.: 4.7529   3rd Qu.:74.84   3rd Qu.:17.03      3rd Qu.:16.229    
+ Max.   :59.94    Max.   :42.496   Max.   :60.90   Max.   :10.9499   Max.   :81.75   Max.   :23.21      Max.   :24.262    
+      GDP       
+ Min.   : 8200  
+ 1st Qu.:13350  
+ Median :16700  
+ Mean   :18877  
+ 3rd Qu.:20700  
+ Max.   :51200  
+[1] 47 14
+ [1] "BG31" "BG32" "BG33" "BG34" "BG41" "BG42" "CZ01" "CZ02" "CZ03" "CZ04" "CZ05" "CZ06" "CZ07" "CZ08" "FI19" "FI1B" "FI1C" "FI1D"
+[19] "LV00" "PL11" "PL12" "PL21" "PL22" "PL31" "PL32" "PL33" "PL34" "PL41" "PL42" "PL43" "PL51" "PL52" "PL61" "PL62" "PL63" "RO11"
+[37] "RO12" "RO21" "RO22" "RO31" "RO32" "RO41" "RO42" "SK01" "SK02" "SK03" "SK04"
+ [1] "pop_Total"          "pop_Y0-14"          "pop_Y15-24"         "pop_Y25-64"         "pop_Y65-74"         "pop_YGE75"         
+ [7] "emp_Y25-64_ED0-2"   "emp_Y25-64_ED3-4"   "emp_Y25-64_ED5-8"   "emp_FT"             "emp_PT"             "emp_Y25-64_NaceG-I"
+[13] "emp_Y25-64_NaceO-Q" "GDP"               
+   pop_Total         pop_Y0-14       pop_Y15-24       pop_Y25-64      pop_Y65-74       pop_YGE75      emp_Y25-64_ED0-2
+ Min.   : 625167   Min.   :12.58   Min.   : 8.753   Min.   :50.14   Min.   : 7.392   Min.   : 5.067   Min.   : 1.588  
+ 1st Qu.:1219324   1st Qu.:14.21   1st Qu.:10.574   1st Qu.:55.96   1st Qu.: 8.380   1st Qu.: 6.466   1st Qu.: 3.075  
+ Median :1615542   Median :15.02   Median :11.284   Median :56.55   Median : 9.292   Median : 7.223   Median : 5.245  
+ Mean   :1882277   Mean   :15.06   Mean   :11.256   Mean   :56.58   Mean   : 9.678   Mean   : 7.426   Mean   : 6.333  
+ 3rd Qu.:2277880   3rd Qu.:15.62   3rd Qu.:12.051   3rd Qu.:57.88   3rd Qu.:10.973   3rd Qu.: 8.087   3rd Qu.: 7.722  
+ Max.   :5309778   Max.   :17.91   Max.   :13.695   Max.   :62.36   Max.   :14.129   Max.   :10.682   Max.   :23.768  
+ emp_Y25-64_ED3-4 emp_Y25-64_ED5-8     emp_FT          emp_PT        emp_Y25-64_NaceG-I emp_Y25-64_NaceO-Q      GDP       
+ Min.   :28.32    Min.   : 9.802   Min.   :39.89   Min.   : 0.9401   Min.   :11.00      Min.   : 6.978     Min.   : 8200  
+ 1st Qu.:38.54    1st Qu.:14.797   1st Qu.:47.16   1st Qu.: 2.8540   1st Qu.:13.31      1st Qu.:12.966     1st Qu.:13350  
+ Median :40.19    Median :18.480   Median :50.83   Median : 3.4485   Median :14.63      Median :14.614     Median :16700  
+ Mean   :42.79    Mean   :20.247   Mean   :51.26   Mean   : 4.1905   Mean   :15.39      Mean   :14.594     Mean   :18877  
+ 3rd Qu.:45.90    3rd Qu.:24.029   3rd Qu.:55.26   3rd Qu.: 4.7529   3rd Qu.:17.03      3rd Qu.:16.229     3rd Qu.:20700  
+ Max.   :59.94    Max.   :42.496   Max.   :60.90   Max.   :10.9499   Max.   :23.21      Max.   :24.262     Max.   :51200  

@@ -1,0 +1,13 @@
+glmulti.analysis
+Method: h / Fitting: lm / IC used: aicc
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: 1581.85535917996
+Best model:
+[1] "lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_Y65_74 + pop_YGE75 + " 
+[2] "    emp_Y25_64_ED3_4 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceG_I + "
+[3] "    GDP"                                                           
+Evidence weight: 0.0307483978927733
+Worst IC: 1585.06635070679
+31 models within 2 IC units.
+92 models to reach 95% of evidence weight.

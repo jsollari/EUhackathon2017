@@ -1,0 +1,6 @@
+Sets to variables test for over-representation
+76 variables tested, 1 have p < 0.05 
+Selected set size: 2 
+    Universe size: 98 
+      vars       pval      adjp odds       exp obs size
+1 rooms_pp 0.02861351 0.9380742  Inf 0.3469388   2   17

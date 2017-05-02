@@ -1,0 +1,11 @@
+glmulti.analysis
+Method: h / Fitting: multivar / IC used: aicc
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: 54.1783977952208
+Best model:
+[1] "lmktm_OC6 ~ 1 + low_work + ARPR_socexcl"
+Evidence weight: 0.399119285732819
+Worst IC: 74.5597529359576
+3 models within 2 IC units.
+5 models to reach 95% of evidence weight.

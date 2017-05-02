@@ -1,0 +1,36 @@
+Step1: Highly correlated between themselves
+  Remove emp_Y15-24_ED3-4 (r_emp_Y15-24 = 0.92)
+  Remove earn_OC1_G-N (r_earn_OC1_B-F = 0.95)
+  Remove earn_OC1_P-S (r_earn_OC1_B-F = 0.96)
+  Remove earn_OC3_B-F (r_earn_OC2_B-F = 0.94)
+  Remove earn_OC4_B-F (r_earn_OC2_B-F = 0.91)
+  Remove earn_OC7_B-F (r_earn_OC2_B-F = 0.94)
+  Remove earn_OC2_G-N (r_earn_OC2_B-F = 0.98)
+  Remove earn_OC3_G-N (r_earn_OC2_B-F = 0.92)
+  Remove earn_OC4_G-N (r_earn_OC2_B-F = 0.92)
+  Remove earn_OC7_G-N (r_earn_OC2_B-F = 0.94)
+  Remove earn_OC9_B-F (r_earn_OC8_B-F = 0.93)
+  Remove earn_OC9_G-N (r_earn_OC8_B-F = 0.94)
+  Remove earn_OC9_P-S (r_earn_OC8_B-F = 0.96)
+  Remove earn_OC7_B-F (r_earn_OC5_G-N = 0.92)
+  Remove earn_OC8_B-F (r_earn_OC5_G-N = 0.94)
+  Remove earn_OC9_B-F (r_earn_OC5_G-N = 0.98)
+  Remove earn_OC8_G-N (r_earn_OC5_G-N = 0.95)
+  Remove earn_OC9_G-N (r_earn_OC5_G-N = 1)
+  Remove earn_OC5_P-S (r_earn_OC5_G-N = 0.94)
+  Remove earn_OC4_B-F (r_earn_OC3_P-S = 0.97)
+  Remove earn_OC7_B-F (r_earn_OC3_P-S = 0.93)
+  Remove earn_OC8_B-F (r_earn_OC3_P-S = 0.94)
+  Remove earn_OC4_G-N (r_earn_OC3_P-S = 0.97)
+  Remove earn_OC4_P-S (r_earn_OC3_P-S = 0.98)
+  Remove earn_OC9_P-S (r_earn_OC3_P-S = 0.93)
+  Remove earn_OC8_P-S (r_earn_OC7_P-S = 0.96)
+Step2: Low correlated with response variable
+  Remove pop_Y65-74 (r = 0.04)
+  Remove pop_YGE75 (r = 0.02)
+  Remove emp_Y15-24_ED0-2 (r = 0.01)
+  Remove GDP (r = 0.05)
+Step3: Variables with low variation
+<Skip step>
+Step4: Variables with low VIF
+<Skip step>

@@ -1,0 +1,6 @@
+a 5-1-1 network with 8 weights
+options were - linear output units  decay=1e-04
+ b->h1 i1->h1 i2->h1 i3->h1 i4->h1 i5->h1 
+  0.63   5.93   6.09   6.46  -7.77  -3.84 
+ b->o h1->o 
+ 5.35 -5.33 

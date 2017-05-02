@@ -1,0 +1,12 @@
+consensus of 2-../results/regression/nuts0/modsel_nnet_nuts0_migrt_Y25.64_rep1_2
+Method: r / Fitting: multivar / IC used: aicc
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: 17.9394498159589
+Best model:
+[1] "migrt_Y25_64 ~ 1 + pop_Total + emp_Y15_24_ED3_4 + emp_Y15_24_ED5_8 + "
+[2] "    emp_Y25_64_NaceB_E"                                               
+Evidence weight: 0.111272672899195
+Worst IC: 25.1640135482281
+1 models within 2 IC units.
+83 models to reach 95% of evidence weight.

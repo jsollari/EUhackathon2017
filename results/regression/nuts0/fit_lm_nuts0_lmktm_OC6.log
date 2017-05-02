@@ -1,0 +1,20 @@
+
+Call:
+lm(formula = form1, data = dat1)
+
+Residuals:
+     AT      CZ      EL      ES      FI      IT      SE 
+ 1.3324 -0.2008  1.9905 -0.4486 -0.4615 -3.1406  0.9286 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -17.6185     2.5400  -6.936 0.002268 ** 
+low_work      -2.7617     0.4905  -5.631 0.004894 ** 
+ARPR_socexcl   3.2244     0.2657  12.135 0.000265 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.057 on 4 degrees of freedom
+Multiple R-squared:  0.9885,	Adjusted R-squared:  0.9828 
+F-statistic: 172.2 on 2 and 4 DF,  p-value: 0.0001318
+

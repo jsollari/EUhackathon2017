@@ -1,0 +1,18 @@
+Step1: Highly correlated between themselves
+Step2: Low correlated with response variable
+  Remove pop_Y25-64 (r = 0.04)
+  Remove ARPR (r = 0.04)
+  Remove mat_depriv (r = 0.04)
+  Remove emp_PT (r = 0.03)
+  Remove emp_Y25-64_NaceA (r = 0.02)
+  Remove emp_Y15-24_NaceG-I (r = 0)
+  Remove emp_Y25-64_NaceJ (r = 0.06)
+  Remove emp_Y15-24_NaceM_N (r = 0)
+  Remove emp_Y25-64_NaceM_N (r = 0.05)
+  Remove emp_Y25-64_NaceO-Q (r = 0.03)
+  Remove emp_Y15-24_NaceR-U (r = 0.07)
+  Remove unemp_Y15-24 (r = 0.06)
+Step3: Variables with low variation
+<Skip step>
+Step4: Variables with low VIF
+<Skip step>

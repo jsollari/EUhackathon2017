@@ -1,0 +1,24 @@
+Step1: Highly correlated between themselves
+  Remove rooms_pp (r_pop_Y65-74 = -0.95)
+  Remove emp_Y25-64_ED0-2 (r_ARPR_socexcl = 1)
+  Remove emp_Y25-64 (r_ARPR_socexcl = -1)
+  Remove emp_Y25-64_NaceF (r_ARPR_socexcl = -1)
+  Remove low_work (r_emp_Y15-24_ED0-2 = 1)
+  Remove unemp_YGE25 (r_emp_Y15-24_ED3-4 = -1)
+  Remove unemp_Y15-24 (r_emp_Y25-64_ED3-4 = -1)
+  Remove emp_Y25-64_ED5-8 (r_emp_Y15-24_ED5-8 = 1)
+  Remove emp_Y15-24_NaceM_N (r_emp_Y15-24_ED5-8 = 1)
+  Remove emp_Y25-64_NaceJ (r_emp_Y15-24 = 1)
+  Remove emp_Y25-64_NaceR-U (r_emp_Y15-24_NaceB-E = -1)
+  Remove pop_Y65-74 (r_emp_Y25-64_NaceB-E = 1)
+  Remove rooms_pp (r_emp_Y25-64_NaceB-E = -0.95)
+  Remove pop_Y0-14 (r_emp_Y15-24_NaceG-I = 1)
+  Remove emp_Y25-64_NaceO-Q (r_emp_Y15-24_NaceG-I = 1)
+  Remove pop_Y15-24 (r_emp_Y25-64_NaceK = 1)
+  Remove pop_Total (r_GDP = 1)
+Step2: Low correlated with response variable
+<None removed>
+Step3: Variables with low variation
+<Skip step>
+Step4: Variables with low VIF
+<Skip step>

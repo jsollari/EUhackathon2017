@@ -1,0 +1,5 @@
+"","model","aicc","weights"
+"1","lmktm_ED3_4 ~ 1 + mat_depriv + ARPR_socexcl + emp_Y25_64_NaceK + emp_Y25_64_NaceL",164.966731664606,0.0864766762938763
+"2","lmktm_ED3_4 ~ 1 + emp_PT + emp_Y25_64_NaceB_E + emp_Y25_64_NaceJ + emp_Y25_64_NaceL + emp_Y25_64_NaceO_Q + emp_Y15_24_NaceR_U + emp_Y25_64_NaceR_U",165.866095337265,0.0551575095879199
+"3","lmktm_ED3_4 ~ 1 + mat_depriv + ARPR_socexcl + emp_Y25_64_NaceK + emp_Y25_64_NaceL + emp_Y15_24_NaceR_U",166.384096590326,0.0425718091211739
+"4","lmktm_ED3_4 ~ 1 + ARPR + mat_depriv + emp_Y25_64_NaceK + emp_Y25_64_NaceL",166.621549634438,0.0378059219024866

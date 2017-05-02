@@ -1,0 +1,6 @@
+a 6-1-1 network with 9 weights
+options were - linear output units  decay=1e-04
+ b->h1 i1->h1 i2->h1 i3->h1 i4->h1 i5->h1 i6->h1 
+  0.04   2.09   0.37   0.99  -1.02  -5.09  -7.41 
+ b->o h1->o 
+ 4.48 -8.27 

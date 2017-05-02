@@ -1,0 +1,12 @@
+consensus of 2-../results/regression/nuts0/modsel_nnet_nuts0_lmktm_OC8_rep1_2
+Method: r / Fitting: multivar / IC used: aicc
+Level: 1 / Marginality: FALSE
+From 100 models:
+Best IC: 161.983344915526
+Best model:
+[1] "lmktm_OC8 ~ 1 + mat_depriv + ARPR_socexcl + emp_Y25_64_ED3_4 + "
+[2] "    emp_Y25_64_NaceK + emp_Y25_64_NaceL"                        
+Evidence weight: 0.0843761447420419
+Worst IC: 170.776078029434
+5 models within 2 IC units.
+65 models to reach 95% of evidence weight.

@@ -1,0 +1,6 @@
+a 13-1-1 network with 16 weights
+options were - linear output units  decay=1e-04
+  b->h1  i1->h1  i2->h1  i3->h1  i4->h1  i5->h1  i6->h1  i7->h1  i8->h1  i9->h1 i10->h1 i11->h1 i12->h1 i13->h1 
+  -0.97   -0.02    1.05    0.09   -0.05    1.01   -5.72   -5.72   -5.64   -0.23    5.63    0.12   -0.07    0.02 
+ b->o h1->o 
+-3.10  9.94 

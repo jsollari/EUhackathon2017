@@ -1,0 +1,3 @@
+"","model","aicc","weights"
+"1","lmktm_OC9 ~ 1 + emp_FT + emp_PT + emp_Y15_24_NaceB_E + emp_Y25_64_NaceO_Q + GDP",186.449067770373,0.106442727072446
+"2","lmktm_OC9 ~ 1 + emp_FT + emp_Y15_24_NaceB_E + emp_Y15_24_NaceO_Q + emp_Y25_64_NaceO_Q + GDP",187.675236470024,0.0576576374007042

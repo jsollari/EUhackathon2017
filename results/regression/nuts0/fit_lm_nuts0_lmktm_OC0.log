@@ -1,0 +1,16 @@
+
+Call:
+lm(formula = form1, data = dat1)
+
+Residuals:
+    CY     CZ     ES     IT     UK 
+ 8.690 -1.714 -6.200 -7.230  6.454 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   12.241      3.247    3.77   0.0196 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.26 on 4 degrees of freedom
+

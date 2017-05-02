@@ -1,0 +1,17 @@
+"","model","aicc","weights"
+"1","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64_NaceO_Q + GDP",595.351927633656,0.037900593630051
+"2","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64 + GDP",595.513504343898,0.0349590864763642
+"3","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + GDP + training",596.11125734382,0.0259274413640912
+"4","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + GDP",596.278170687806,0.0238514556246773
+"5","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED3_4 + emp_FT + emp_Y25_64_NaceO_Q + GDP",596.452637063076,0.0218589852292263
+"6","lmktm_OC7 ~ 1 + pop_Total + pop_Y25_64 + pop_YGE75 + emp_Y25_64 + GDP",596.635191347443,0.0199521103188355
+"7","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64 + GDP + training",596.78846976451,0.0184801227702063
+"8","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64_NaceO_Q + GDP + training",596.847444353885,0.0179431497920685
+"9","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_FT + emp_Y25_64_NaceO_Q + GDP",596.912248899986,0.0173710693580815
+"10","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED3_4 + emp_Y25_64 + GDP",596.949972272201,0.0170464923578957
+"11","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64 + emp_Y25_64_NaceO_Q + GDP",597.035292227511,0.0163345823691715
+"12","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64 + GDP",597.058856008252,0.0161432593967595
+"13","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + pop_YGE75 + emp_FT + emp_Y25_64_NaceO_Q + GDP",597.243008945864,0.0147232241158133
+"14","lmktm_OC7 ~ 1 + pop_Total + pop_Y25_64 + pop_Y65_74 + pop_YGE75 + emp_Y25_64 + GDP",597.279285751139,0.0144585757537251
+"15","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_YGE75 + emp_FT + emp_Y25_64 + GDP",597.321830288209,0.0141542572951357
+"16","lmktm_OC7 ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + pop_YGE75 + emp_Y25_64 + GDP",597.334535731329,0.0140646242479879
