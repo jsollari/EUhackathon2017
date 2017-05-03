@@ -99,6 +99,10 @@ options(contrasts=c("contr.sum","contr.poly"))
 # w - weights
 source("misc_v2.1.r")
 
+# Check variables present in datasets
+# files - files of datasets to check
+# geo_cat - geographical tags to use for particular datasets [e.g. single-year datasets]
+# f1 - path for files
 overview_data1 = function(files,geo_cat=NULL,f1){
     nfiles = length(files)
     cnam1 = vector("list",length=nfiles)
@@ -136,7 +140,9 @@ overview_data1 = function(files,geo_cat=NULL,f1){
     return(cnam1)
 }
 
-#which database has particular variable?
+# Check which dataset contains certain variable
+# nams1 - names of variables to check
+# cnam1 - list of the variables of data frames
 overview_data2 = function(nams1,cnam1){
     for(i1 in nams1){
         tmp = c()
@@ -151,6 +157,11 @@ overview_data2 = function(nams1,cnam1){
     }
 }
 
+# Read data from files to a lsit of data frames
+# files - files to read data from
+# geo_cat - geographical tags to keep
+# sex_cat - sex categories to keep {"F","M","T"}
+# rem_col - columns to remove from data sets
 read_data = function(files,geo_cat,sex_cat,rem_col){
     age_cat0 = c("TOTAL")
     age_cat1 = c("Y_LT1","Y1","Y2","Y3","Y4","Y5","Y6","Y7","Y8","Y9","Y10",
@@ -521,6 +532,9 @@ read_data = function(files,geo_cat,sex_cat,rem_col){
     return(dat1)
 }
 
+# Reshape long format to wide format
+# dat1 - data frame of variables to be analysed
+# sexbreak - break data by "sex"
 reshape2wide = function(dat1,sexbreak=FALSE){
     dat1w = dat1
     files = names(dat1w)
