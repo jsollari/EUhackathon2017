@@ -1,7 +1,7 @@
 #autor:      Joao Sollari Lopes
 #local:      INE, Lisboa
 #criado:     17.03.2017
-#modificado: 02.05.2017
+#modificado: 04.05.2017
 +bin
   |data_analysis_v1.r                      #R script to run the full analysis
   |misc_v2.1.r                             #Miscellaneous functions for Data Mining
@@ -39,13 +39,6 @@
   |ESS_BigData_Hackathon_description.pdf   #ESS: Document from "https://ec.europa.eu/eurostat/cros/content/big-data_en"
   |Methodology_handouts_20170427.pdf       #Methodology presentation
   |Methodology_summary.pdf                 #Methodology description
-+results
-  +analyse_classification
-  +csv
-  +data_overview
-  +json
-  +regression
-  +wcna
   |class_nnet_EU_groups_nuts0.xls          #Summary of classification analysis for NUTS0
   |class_nnet_EU_groups_nuts1.xls          #Summary of classification analysis for NUTS1
   |class_nnet_EU_groups_nuts2.xls          #Summary of classification analysis for NUTS2
@@ -104,6 +97,13 @@
   |wcna_nuts0.xls                          #Summary of Weighted Correlation Network Analysis for NUTS0
   |wcna_nuts1.xls                          #Summary of Weighted Correlation Network Analysis for NUTS1
   |wcna_nuts2.xls                          #Summary of Weighted Correlation Network Analysis for NUTS2
++results
+  +analyse_classification
+  +csv
+  +data_overview
+  +json
+  +regression
+  +wcna
   |dat1.RDS                                #Eurostat data sets broken by NUTS1
   |dat2.RDS                                #Eurostat data sets broken by NUTS2
 README.txt                                 #This file
