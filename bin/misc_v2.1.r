@@ -1,7 +1,7 @@
 #autor:      Joao Sollari Lopes
 #local:      INE, Lisboa
 #criado:     13.03.2017
-#modificado: 28.04.2017
+#modificado: 17.05.2017
 
 ## 1. FUNCTIONS
 {
@@ -1120,20 +1120,23 @@ fit_binomial_v2 = function(form1,dat1,col1=NULL,f1,main){
     write.table(t3,file=f5,sep=",",row.names=TRUE,col.names=NA)
     minf = 0-1e-12/2
     maxf = 1+1e-12/2
-    logitfit = (round2(fit1$fit,12) - minf)/(maxf - minf) #avoid exact 0s and 1s
+    logitfit = (round(fit1$fit,12) - minf)/(maxf - minf) #avoid exact 0s and 1s
     if(is.null(col1)){
         col1 = rainbow(nlev)
     }
     col2 = col1[as.numeric(grps)]       #observed group
-    if(nlev > 15){
+    if(nrow(dat1) > 100){
         width1 = 7.0
         height1 = 10.0
         mfrow1 = c(2,1)
-        ncol1 = ceiling(nlev/15)
     }else{
         width1 = 7.0
         height1 = 3.5
         mfrow1 = c(1,2)
+    }
+    if(nlev > 15){
+        ncol1 = ceiling(nlev/15)
+    }else{
         ncol1 = 1
     }
     f2 = paste(f1,"_1",sep="")
@@ -1427,20 +1430,23 @@ fit_multinomial_v2 = function(form1,dat1,col1=NULL,eqsamp=FALSE,f1,main){
     write.table(t1,file=f3,sep=",",row.names=TRUE,col.names=NA)
     write.table(t2,file=f4,sep=",",row.names=TRUE,col.names=NA)
     write.table(t3,file=f5,sep=",",row.names=TRUE,col.names=NA)
-    logitfit = gtools::logit(round2(fit1$fit,12),min=-1e-12/2,max=1+1e-12/2)
+    logitfit = gtools::logit(round(fit1$fit,12),min=-1e-12/2,max=1+1e-12/2)
     if(is.null(col1)){
         col1 = rainbow(nlev)
     }
     col2 = col1[as.numeric(grps)]       #observed group
-    if(nlev > 15){
+    if(nrow(dat1) > 100){
         width1 = 7.0
         height1 = 10.0
         mfrow1 = c(2,1)
-        ncol1 = ceiling(nlev/15)
     }else{
         width1 = 7.0
         height1 = 3.5
         mfrow1 = c(1,2)
+    }
+    if(nlev > 15){
+        ncol1 = ceiling(nlev/15)
+    }else{
         ncol1 = 1
     }
     f2 = paste(f1,"_1",sep="")
