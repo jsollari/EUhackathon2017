@@ -3,4 +3,4 @@ Sets to variables test for over-representation
 Selected set size: 2 
     Universe size: 98 
    vars       pval adjp odds       exp obs size
-1 GVAgr 0.04418262    1  Inf 0.4285714   2   21
+1 GVAgr 0.02861351    1  Inf 0.3469388   2   17

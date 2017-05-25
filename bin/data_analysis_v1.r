@@ -1,7 +1,7 @@
 #autor:      Joao Sollari Lopes
 #local:      INE, Lisboa
 #criado:     13.03.2017
-#modificado: 28.04.2017
+#modificado: 17.05.2017
 
 #setwd("2017.03.17_BigData/bin/")
 options("width"=130)
@@ -1523,22 +1523,27 @@ if(length(levels(clst1)) <= 2){
 }
 
 ###### 4.1.8. Enrichment analysis
-f1 = "../results/analyse_classification/nuts0/ora_ge75_nuts0"
-for(i1 in levels(clst1)){
-    f2 = paste(f1,"_grp",i1,sep="")
-    nuts_uni = names(clst1)
-    nuts_sel = nuts_uni[clst1 == i1]
-    performORA_v2(nuts_sel,nuts_uni,x_all_nuts0,prob=2/3,dirct="ge",stat="pval",
-      f1=f2)
-}
-
-f1 = "../results/analyse_classification/nuts0/ora_le25_nuts0"
-for(i1 in levels(clst1)){
-    f2 = paste(f1,"_grp",i1,sep="")
-    nuts_uni = names(clst1)
-    nuts_sel = nuts_uni[clst1 == i1]
-    performORA_v2(nuts_sel,nuts_uni,x_all_nuts0,prob=1/3,dirct="le",stat="pval",
-      f1=f2)
+for(i1 in c(4,5,10)){
+    thr1 = (i1 - 1)/i1
+    f1 = paste("../results/analyse_classification/nuts0/ora_ge",round(thr1*100),
+      "_nuts0",sep="")
+    for(i2 in levels(clst1)){
+        f2 = paste(f1,"_grp",i2,sep="")
+        nuts_uni = names(clst1)
+        nuts_sel = nuts_uni[clst1 == i2]
+        performORA_v2(nuts_sel,nuts_uni,x_all_nuts0,prob=thr1,dirct="ge",
+          stat="pval",f1=f2)
+    }
+    thr2 = 1/i1
+    f1 = paste("../results/analyse_classification/nuts0/ora_le",round(thr2*100),
+      "_nuts0",sep="")
+    for(i2 in levels(clst1)){
+        f2 = paste(f1,"_grp",i2,sep="")
+        nuts_uni = names(clst1)
+        nuts_sel = nuts_uni[clst1 == i2]
+        performORA_v2(nuts_sel,nuts_uni,x_all_nuts0,prob=thr2,dirct="le",
+          stat="pval",f1=f2)
+    }
 }
 
 ###### 4.1.9. Weighted correlation network analysis (WCNA)
@@ -1883,22 +1888,27 @@ if(length(levels(clst2)) <= 2){
 }
 
 ###### 4.2.8. Enrichment analysis
-f1 = "../results/analyse_classification/nuts1/ora_ge75_nuts1"
-for(i1 in levels(clst1)){
-    f2 = paste(f1,"_grp",i1,sep="")
-    nuts_uni = names(clst1)
-    nuts_sel = nuts_uni[clst1 == i1]
-    performORA_v2(nuts_sel,nuts_uni,x_all_nuts1,prob=2/3,dirct="ge",stat="pval",
-      f1=f2)
-}
-
-f1 = "../results/analyse_classification/nuts1/ora_le25_nuts1"
-for(i1 in levels(clst1)){
-    f2 = paste(f1,"_grp",i1,sep="")
-    nuts_uni = names(clst1)
-    nuts_sel = nuts_uni[clst1 == i1]
-    performORA_v2(nuts_sel,nuts_uni,x_all_nuts1,prob=1/3,dirct="le",stat="pval",
-      f1=f2)
+for(i1 in c(4,5,10)){
+    thr1 = (i1 - 1)/i1
+    f1 = paste("../results/analyse_classification/nuts1/ora_ge",round(thr1*100),
+      "_nuts1",sep="")
+    for(i2 in levels(clst1)){
+        f2 = paste(f1,"_grp",i2,sep="")
+        nuts_uni = names(clst1)
+        nuts_sel = nuts_uni[clst1 == i2]
+        performORA_v2(nuts_sel,nuts_uni,x_all_nuts1,prob=thr1,dirct="ge",
+          stat="pval",f1=f2)
+    }
+    thr2 = 1/i1
+    f1 = paste("../results/analyse_classification/nuts1/ora_le",round(thr2*100),
+      "_nuts1",sep="")
+    for(i2 in levels(clst1)){
+        f2 = paste(f1,"_grp",i2,sep="")
+        nuts_uni = names(clst1)
+        nuts_sel = nuts_uni[clst1 == i2]
+        performORA_v2(nuts_sel,nuts_uni,x_all_nuts1,prob=thr2,dirct="le",
+          stat="pval",f1=f2)
+    }
 }
 
 ###### 4.2.9. Weighted correlation network analysis (WCNA)
@@ -2239,22 +2249,27 @@ if(length(levels(clst2)) <= 2){
 }
 
 ###### 4.3.8. Enrichment analysis
-f1 = "../results/analyse_classification/nuts2/ora_ge75_nuts2"
-for(i1 in levels(clst1)){
-    f2 = paste(f1,"_grp",i1,sep="")
-    nuts_uni = names(clst1)
-    nuts_sel = nuts_uni[clst1 == i1]
-    performORA_v2(nuts_sel,nuts_uni,x_all_nuts2,prob=2/3,dirct="ge",stat="pval",
-      f1=f2)
-}
-
-f1 = "../results/analyse_classification/nuts2/ora_le25_nuts2"
-for(i1 in levels(clst1)){
-    f2 = paste(f1,"_grp",i1,sep="")
-    nuts_uni = names(clst1)
-    nuts_sel = nuts_uni[clst1 == i1]
-    performORA_v2(nuts_sel,nuts_uni,x_all_nuts2,prob=1/3,dirct="le",stat="pval",
-      f1=f2)
+for(i1 in c(4,5,10)){
+    thr1 = (i1 - 1)/i1
+    f1 = paste("../results/analyse_classification/nuts2/ora_ge",round(thr1*100),
+      "_nuts2",sep="")
+    for(i2 in levels(clst1)){
+        f2 = paste(f1,"_grp",i2,sep="")
+        nuts_uni = names(clst1)
+        nuts_sel = nuts_uni[clst1 == i2]
+        performORA_v2(nuts_sel,nuts_uni,x_all_nuts2,prob=thr1,dirct="ge",
+          stat="pval",f1=f2)
+    }
+    thr2 = 1/i1
+    f1 = paste("../results/analyse_classification/nuts2/ora_le",round(thr2*100),
+      "_nuts2",sep="")
+    for(i2 in levels(clst1)){
+        f2 = paste(f1,"_grp",i2,sep="")
+        nuts_uni = names(clst1)
+        nuts_sel = nuts_uni[clst1 == i2]
+        performORA_v2(nuts_sel,nuts_uni,x_all_nuts2,prob=thr2,dirct="le",
+          stat="pval",f1=f2)
+    }
 }
 
 ###### 4.3.9. Weighted correlation network analysis (WCNA)

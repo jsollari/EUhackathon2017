@@ -4,4 +4,4 @@ Selected set size: 1
     Universe size: 276 
               vars        pval      adjp odds         exp obs size
 1 emp_Y15-24_NaceL 0.007246377 0.5507246  Inf 0.007246377   1    2
-2 emp_Y15-24_NaceK 0.043478261 0.7147703  Inf 0.043478261   1   12
+2 emp_Y15-24_NaceK 0.032608696 0.5644928  Inf 0.032608696   1    9
