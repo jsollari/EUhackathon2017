@@ -1,7 +1,7 @@
 #autor:      Joao Sollari Lopes
 #local:      INE, Lisboa
 #criado:     13.03.2017
-#modificado: 17.05.2017
+#modificado: 09.06.2017
 
 ## 1. FUNCTIONS
 {
@@ -2302,7 +2302,13 @@ analyse_WCNA_v2 = function(dat1,tra1,mins1=20,spl1=FALSE,meth1="hybrid",
     #calculate module membership and intramodular connectivity
     varIC = intramodularConnectivity(adjs,modCol)   #var Intramodular Connectivity
     varMM = as.data.frame(cor(dat1,MEs,method="s",use="pairwise.complete.obs")) #var Module Membership
-    varMMPval = as.data.frame(corPvalueStudent(as.matrix(varMM),nrow(dat1)))
+    nMM = matrix(0,ncol(dat1),ncol(MEs))
+    for(i1 in 1:ncol(dat1)){
+        for(i2 in 1:ncol(MEs)){
+            nMM[i1,i2] = sum(!is.na(dat1[,i1]) & !is.na(MEs[,i2]))
+        }
+    }
+    varMMPval = as.data.frame(corPvalueStudent(as.matrix(varMM),nMM))
     colnames(varMM) = modNam
     colnames(varMMPval) = modNam
     varInfo = data.frame(var=colnames(dat1),module=modCol,kTotal=varIC$kTotal,
@@ -2328,7 +2334,11 @@ analyse_WCNA_v2 = function(dat1,tra1,mins1=20,spl1=FALSE,meth1="hybrid",
     for(i1 in traits){
         if(is.null(levels(tra1[,i1]))){
             varTS[,i1] = WGCNA::cor(dat1,tra1[,i1],use="p",method="s")
-            varTSPval[,i1] <- corPvalueStudent(varTS[,i1],nrow(dat1))
+            nTS = vector(mode="numeric",length=ncol(dat1))
+            for(j1 in 1:ncol(dat1)){
+                nTS[j1] = sum(!is.na(dat1[,j1]) & !is.na(tra1[,i1]))
+            }
+            varTSPval[,i1] = corPvalueStudent(varTS[,i1],nTS)
         }else{
             for(i2 in 1:ncol(dat1)){
                 ina = is.na(dat1[,i2])
@@ -2372,7 +2382,11 @@ analyse_WCNA_v2 = function(dat1,tra1,mins1=20,spl1=FALSE,meth1="hybrid",
     for(i1 in traits){
         if(is.null(levels(tra1[,i1]))){
             modTS[,i1] = cor(MEs,tra1[,i1],use="p",method="spearman")
-            modTSPval[,i1] = corPvalueStudent(modTS[,i1],nrow(MEs))
+            nTS = vector(mode="numeric",length=ncol(MEs))
+            for(j1 in 1:ncol(MEs)){
+                nTS[j1] = sum(!is.na(dat1[,j1]) & !is.na(tra1[,i1]))
+            }
+            modTSPval[,i1] = corPvalueStudent(modTS[,i1],nTS)
         }else{
             for(i2 in 1:ncol(MEs)){
                 ina = is.na(MEs[,i2])
