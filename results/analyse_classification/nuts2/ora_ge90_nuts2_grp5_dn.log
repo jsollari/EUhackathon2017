@@ -1,11 +1,4 @@
 Sets to variables test for under-representation
-76 variables tested, 6 have p < 0.05 
+48 variables tested, 0 have p < 0.05 
 Selected set size: 13 
     Universe size: 276 
-          vars       pval      adjp odds      exp obs size
-1 earn_OC8_B-F 0.02965894 0.4157522    0 3.014493   0   64
-2 earn_OC7_B-F 0.03362969 0.4157522    0 2.920290   0   62
-3 earn_OC1_B-F 0.04051327 0.4157522    0 2.778986   0   59
-4 earn_OC3_G-N 0.04580119 0.4157522    0 2.684783   0   57
-5 earn_OC3_P-S 0.04580119 0.4157522    0 2.684783   0   57
-6 earn_OC4_P-S 0.04580119 0.4157522    0 2.684783   0   57

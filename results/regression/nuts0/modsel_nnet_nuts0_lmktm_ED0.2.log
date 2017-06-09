@@ -2,11 +2,11 @@ consensus of 2-../results/regression/nuts0/modsel_nnet_nuts0_lmktm_ED0.2_rep1_2
 Method: r / Fitting: multivar / IC used: aicc
 Level: 1 / Marginality: FALSE
 From 100 models:
-Best IC: 172.459315500919
+Best IC: 169.783972040997
 Best model:
-[1] "lmktm_ED0_2 ~ 1 + emp_Y15_24_ED0_2 + emp_Y25_64_NaceA + emp_Y25_64_NaceG_I + "
-[2] "    GDP"                                                                      
-Evidence weight: 0.0545527593505567
-Worst IC: 177.669333277677
-11 models within 2 IC units.
-88 models to reach 95% of evidence weight.
+[1] "lmktm_ED0_2 ~ 1 + emp_Y25_64_ED3_4 + emp_Y15_24_NaceB_E + emp_Y15_24_NaceR_U + "
+[2] "    emp_Y25_64_NaceR_U + GDP"                                                   
+Evidence weight: 0.126047473829417
+Worst IC: 177.415753790614
+1 models within 2 IC units.
+83 models to reach 95% of evidence weight.

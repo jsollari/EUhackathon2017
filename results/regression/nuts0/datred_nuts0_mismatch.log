@@ -3,18 +3,20 @@ Step1: Highly correlated between themselves
   Remove mat_depriv (r_ARPR = 0.9)
   Remove ARPR_socexcl (r_ARPR = 0.98)
   Remove training (r_rooms_pp = 0.97)
-  Remove emp_Y15-24_ED0-2 (r_emp_PT = 0.95)
-  Remove emp_Y15-24_NaceF (r_emp_Y15-24 = 0.93)
-  Remove emp_Y25-64_NaceJ (r_emp_Y25-64 = 0.9)
-  Remove emp_Y25-64_ED5-8 (r_emp_Y15-24_NaceG-I = 0.93)
+  Remove emp_Y25-64_ED0-2 (r_emp_Y15-24_ED0-2 = 0.9)
+  Remove emp_Y15-24_ED3-4 (r_emp_Y15-24_ED0-2 = -0.95)
+  Remove pop_YGE75 (r_emp_Y25-64_ED3-4 = -0.9)
   Remove rooms_pp (r_emp_Y25-64_NaceM_N = 0.98)
   Remove emp_Y25-64_NaceR-U (r_emp_Y25-64_NaceM_N = 0.93)
   Remove training (r_emp_Y25-64_NaceM_N = 0.92)
-  Remove emp_Y25-64_NaceO-Q (r_emp_Y15-24_NaceO-Q = 0.93)
-  Remove emp_Y15-24_NaceR-U (r_emp_Y15-24_NaceO-Q = 0.9)
+  Remove emp_Y25-64_NaceO-Q (r_emp_Y15-24_NaceO-Q = 0.9)
+  Remove rooms_pp (r_emp_Y15-24_NaceR-U = 0.9)
+  Remove emp_Y25-64_NaceM_N (r_emp_Y15-24_NaceR-U = 0.9)
+  Remove emp_Y25-64_NaceR-U (r_emp_Y15-24_NaceR-U = 0.93)
   Remove mat_depriv (r_GDP = -0.93)
 Step2: Low correlated with response variable
-<None removed>
+  Remove emp_Y25-64_NaceA (r = 0.02)
+  Remove emp_Y25-64_NaceK (r = 0.06)
 Step3: Variables with low variation
 <Skip step>
 Step4: Variables with low VIF

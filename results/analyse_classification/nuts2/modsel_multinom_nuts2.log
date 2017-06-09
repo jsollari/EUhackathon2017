@@ -2,10 +2,11 @@ consensus of 2-../results/analyse_classification/nuts2/modsel_multinom_nuts2_rep
 Method: r / Fitting: multinom / IC used: aic
 Level: 1 / Marginality: FALSE
 From 100 models:
-Best IC: 530.402266463072
+Best IC: 449.940703029726
 Best model:
-[1] "grps ~ 1 + pop_Total + disp_income + training + earn_OC5_P_S"
-Evidence weight: 0.89946997010851
-Worst IC: 590.935642370557
+[1] "grps ~ 1 + pop_Total + emp_Y15_24_ED3_4 + emp_Y15_24 + GDP + "
+[2] "    disp_income + training"                                   
+Evidence weight: 0.945922219714184
+Worst IC: 495.399484522219
 1 models within 2 IC units.
-2 models to reach 95% of evidence weight.
+1 models to reach 95% of evidence weight.

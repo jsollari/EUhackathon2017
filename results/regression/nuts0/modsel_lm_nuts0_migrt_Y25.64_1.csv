@@ -1,8 +1,8 @@
 "","model","aicc","weights"
-"1","migrt_Y25_64 ~ 1 + pop_Y15_24 + pop_YGE75 + ARPR_socexcl + emp_Y25_64_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceR_U",50.4707120455593,0.0625231223145125
-"2","migrt_Y25_64 ~ 1 + pop_Y15_24 + pop_YGE75 + emp_Y25_64_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceR_U + training",50.758429031528,0.054145667032206
-"3","migrt_Y25_64 ~ 1 + pop_Y15_24 + pop_YGE75 + emp_Y25_64_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceR_U",51.1291667455383,0.0449841000615276
-"4","migrt_Y25_64 ~ 1 + pop_Y15_24 + pop_YGE75 + emp_Y25_64_NaceF + emp_Y25_64_NaceG_I + emp_Y15_24_NaceO_Q + emp_Y25_64_NaceR_U",52.0008299717859,0.0290924148534731
-"5","migrt_Y25_64 ~ 1 + pop_Y15_24 + pop_Y65_74 + pop_YGE75 + emp_Y25_64_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceR_U",52.1291293263464,0.0272847463687017
-"6","migrt_Y25_64 ~ 1 + pop_YGE75 + emp_Y25_64_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceR_U",52.1304913969369,0.0272661708194226
-"7","migrt_Y25_64 ~ 1 + pop_Y15_24 + pop_YGE75 + mat_depriv + emp_Y25_64_NaceF + emp_Y25_64_NaceG_I + emp_Y25_64_NaceR_U",52.1358651697535,0.027193008049683
+"1","migrt_Y25_64 ~ 1 + pop_Total + pop_Y15_24 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceL + emp_Y25_64_NaceR_U",46.5489124282376,0.0676532005171799
+"2","migrt_Y25_64 ~ 1 + pop_Total + pop_Y15_24 + ARPR_socexcl + emp_Y15_24_ED5_8 + emp_Y25_64_NaceL + emp_Y25_64_NaceR_U",47.350627009089,0.0453104356273454
+"3","migrt_Y25_64 ~ 1 + pop_Total + emp_Y25_64_ED3_4 + emp_Y15_24_ED5_8 + emp_Y15_24 + emp_Y15_24_NaceB_E + emp_Y25_64_NaceL + emp_Y25_64_NaceM_N + emp_Y25_64_NaceR_U",48.1648446500093,0.0301573463205044
+"4","migrt_Y25_64 ~ 1 + pop_Total + pop_Y15_24 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceR_U + training",48.2850317540084,0.0283984623344567
+"5","migrt_Y25_64 ~ 1 + pop_Total + pop_Y15_24 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceL + emp_Y25_64_NaceR_U + training",48.3540099725024,0.0274357221203913
+"6","migrt_Y25_64 ~ 1 + pop_Total + pop_Y15_24 + emp_Y25_64_ED3_4 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceL + emp_Y25_64_NaceR_U",48.3889817962314,0.0269601534943082
+"7","migrt_Y25_64 ~ 1 + pop_Total + pop_Y15_24 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceL + emp_Y25_64_NaceM_N + emp_Y25_64_NaceR_U",48.5153969932069,0.0253088055579706

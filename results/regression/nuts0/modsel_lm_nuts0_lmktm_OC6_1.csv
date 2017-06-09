@@ -1,3 +1,3 @@
 "","model","aicc","weights"
-"1","lmktm_OC6 ~ 1 + low_work + ARPR_socexcl",54.0422785529897,0.607081671470316
-"2","lmktm_OC6 ~ 1 + ARPR_socexcl",55.3656316553602,0.313245359680929
+"1","lmktm_OC6 ~ 1 + low_work + ARPR_socexcl",54.0422785529897,0.574458703208669
+"2","lmktm_OC6 ~ 1 + ARPR_socexcl",55.3656316553602,0.296412380022313

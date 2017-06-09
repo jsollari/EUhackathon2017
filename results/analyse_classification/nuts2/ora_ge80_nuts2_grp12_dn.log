@@ -1,6 +1,4 @@
 Sets to variables test for under-representation
-76 variables tested, 1 have p < 0.05 
-Selected set size: 10 
+48 variables tested, 0 have p < 0.05 
+Selected set size: 12 
     Universe size: 276 
-          vars       pval      adjp odds      exp obs size
-1 expend_ED5-8 0.03745791 0.8240223    0 2.753623   0   76

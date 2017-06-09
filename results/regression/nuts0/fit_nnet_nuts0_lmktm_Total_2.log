@@ -1,22 +1,21 @@
 
 Call:
-multivar(formula = lmktm_Total ~ 1 + pop_Y15_24 + mat_depriv + 
-    emp_Y15_24_NaceB_E + emp_Y25_64_NaceG_I + emp_Y25_64_NaceK + 
-    emp_Y25_64_NaceL, data = dat1, size = nn_size, decay = nn_decay, 
-    maxit = nn_maxit, abstol = nn_abstol, reltol = nn_reltol, 
+multivar(formula = lmktm_Total ~ 1 + mat_depriv + ARPR_socexcl + 
+    emp_Y25_64_NaceK + emp_Y25_64_NaceL, data = dat1, size = nn_size, 
+    decay = nn_decay, maxit = nn_maxit, abstol = nn_abstol, reltol = nn_reltol, 
     trace = FALSE)
 
 Residuals:
-          [,1]
-Min    -9.1620
-1Q     -3.4734
-Median  0.5242
-3Q      2.9529
-Max     9.4171
+           [,1]
+Min    -14.0871
+1Q      -3.3371
+Median   0.4099
+3Q       3.5659
+Max     10.3705
 
 No Coefficients
 
-Residual standard error: 5.898 on 18 degrees of freedom
-Multiple R-squared:  0.8719,	Adjusted R-squared:  0.8292 
-F-statistic: 20.41 on 6 and 18 DF,  p-value: 4.009e-07
+Residual standard error: 6.381 on 20 degrees of freedom
+Multiple R-squared:  0.8339,	Adjusted R-squared:  0.8006 
+F-statistic:  25.1 on 4 and 20 DF,  p-value: 1.496e-07
 

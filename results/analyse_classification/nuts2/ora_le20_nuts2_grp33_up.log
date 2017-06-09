@@ -1,7 +1,0 @@
-Sets to variables test for over-representation
-76 variables tested, 2 have p < 0.05 
-Selected set size: 6 
-    Universe size: 276 
-       vars         pval        adjp     odds      exp obs size
-1    emp_FT 5.585997e-05 0.004245358      Inf 1.217391   6   56
-2 pop_Total 1.672412e-02 0.635516585 8.384615 1.217391   4   56

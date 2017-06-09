@@ -1,4 +1,8 @@
 "","model","aicc","weights"
-"1","migrt_Total ~ 1 + pop_Total + pop_YGE75 + emp_Y15_24_ED3_4 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceB_E",7.2658296075459,0.0832769946128528
-"2","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED3_4 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceB_E",8.31284522783353,0.0493365174426583
-"3","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24 + emp_Y25_64_NaceB_E",8.87373400903157,0.0372711711043979
+"1","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24_NaceB_E + emp_Y15_24_NaceF + emp_Y25_64_NaceK + emp_Y25_64_NaceM_N",4.62435939177514,0.0839867028815555
+"2","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24_NaceB_E + emp_Y25_64_NaceK + emp_Y25_64_NaceM_N",5.34624025853628,0.0585404550120722
+"3","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24_NaceB_E + emp_Y15_24_NaceF + emp_Y15_24_NaceG_I + emp_Y25_64_NaceK + emp_Y25_64_NaceM_N",5.97955761926766,0.0426513690698982
+"4","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24_NaceB_E + emp_Y25_64_NaceK + emp_Y25_64_NaceM_N + emp_Y15_24_NaceO_Q",6.11981871985893,0.0397626815626076
+"5","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24_NaceB_E + emp_Y25_64_NaceF + emp_Y25_64_NaceK + emp_Y25_64_NaceM_N",6.12531925662694,0.0396534737608619
+"6","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24_NaceB_E + emp_Y15_24_NaceF + emp_Y25_64_NaceK + emp_Y25_64_NaceM_N + unemp_YGE25",6.13959858603076,0.0393713695171489
+"7","migrt_Total ~ 1 + pop_Total + emp_Y15_24_ED5_8 + emp_Y15_24_NaceB_E + emp_Y25_64_NaceK + emp_Y15_24_NaceO_Q",6.58016092761781,0.0315873814412146

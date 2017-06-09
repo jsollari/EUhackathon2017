@@ -2,10 +2,10 @@ glmulti.analysis
 Method: h / Fitting: lm / IC used: aicc
 Level: 1 / Marginality: FALSE
 From 100 models:
-Best IC: 58.1130635480371
+Best IC: 67.5827465238332
 Best model:
-[1] "mismatch ~ 1 + pop_Y15_24 + emp_Y15_24 + emp_Y15_24_NaceM_N"
-Evidence weight: 0.989809248149079
-Worst IC: 82.7510349542453
+[1] "mismatch ~ 1 + emp_Y15_24 + emp_Y15_24_NaceM_N"
+Evidence weight: 0.757886855890168
+Worst IC: 83.8310856659567
 1 models within 2 IC units.
-0 models to reach 95% of evidence weight.
+26 models to reach 95% of evidence weight.

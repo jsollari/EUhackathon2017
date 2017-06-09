@@ -1,17 +1,17 @@
 Step1: Highly correlated between themselves
-  Remove GDP (r_emp_PT = 0.91)
-  Remove emp_Y15-24_ED3-4 (r_emp_Y15-24 = 0.92)
-  Remove emp_Y15-24_NaceG-I (r_emp_Y15-24 = 0.91)
+  Remove GDP (r_emp_TP = 0.91)
+  Remove emp_Y25-64_NaceB-E (r_emp_Y15-24_NaceB-E = 0.95)
 Step2: Low correlated with response variable
-  Remove pop_Y25-64 (r = 0.07)
+  Remove pop_Y25-64 (r = 0.05)
   Remove ARPR (r = 0.02)
-  Remove emp_Y15-24_ED0-2 (r = 0.04)
-  Remove emp_Y25-64_ED0-2 (r = 0.02)
-  Remove emp_Y15-24 (r = 0.1)
-  Remove emp_YGE65 (r = 0.03)
-  Remove emp_Y15-24_NaceF (r = 0.02)
-  Remove emp_Y25-64_NaceL (r = 0.03)
-  Remove emp_Y15-24_NaceM_N (r = 0.03)
+  Remove emp_Y25-64_ED0-2 (r = 0.04)
+  Remove emp_Y15-24_ED5-8 (r = 0.14)
+  Remove emp_TF (r = 0.08)
+  Remove emp_Y15-24 (r = 0.09)
+  Remove emp_YGE65 (r = 0.02)
+  Remove emp_Y15-24_NaceF (r = 0.1)
+  Remove emp_Y25-64_NaceL (r = 0.02)
+  Remove emp_Y15-24_NaceM_N (r = 0.1)
 Step3: Variables with low variation
 <Skip step>
 Step4: Variables with low VIF

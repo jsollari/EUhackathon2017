@@ -3,19 +3,18 @@ Call:
 lm(formula = form1, data = dat1)
 
 Residuals:
-     BG      CZ      FI      LV      PL      PT      RO      SK 
--0.9408  0.3178  0.1230 -0.5867  0.2062  0.5864  1.3159 -1.0218 
+      BG       CZ       FI       LV       PL       PT       RO       SK 
+ 4.55787  4.33848  1.80320 -4.47746 -5.87567  0.01969  5.02944 -5.39554 
 
 Coefficients:
                    Estimate Std. Error t value Pr(>|t|)    
-(Intercept)        217.8561     5.6612   38.48 2.72e-06 ***
-pop_Y15_24          -6.3224     0.5090  -12.42 0.000242 ***
-emp_Y15_24          -4.7422     0.1039  -45.63 1.38e-06 ***
-emp_Y15_24_NaceM_N  22.2051     0.6866   32.34 5.45e-06 ***
+(Intercept)        100.6022     8.6944  11.571 8.46e-05 ***
+emp_Y15_24          -3.1774     0.3561  -8.924 0.000294 ***
+emp_Y15_24_NaceM_N   6.5612     1.0002   6.560 0.001234 ** 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 1.062 on 4 degrees of freedom
-Multiple R-squared:  0.9984,	Adjusted R-squared:  0.9972 
-F-statistic: 829.8 on 3 and 4 DF,  p-value: 4.823e-06
+Residual standard error: 5.51 on 5 degrees of freedom
+Multiple R-squared:  0.946,	Adjusted R-squared:  0.9243 
+F-statistic: 43.76 on 2 and 5 DF,  p-value: 0.0006788
 

@@ -1,8 +1,0 @@
-Step1: Highly correlated between themselves
-  Remove emp_Y25-64 (r_emp_FT = 0.94)
-Step2: Low correlated with response variable
-<None removed>
-Step3: Variables with low variation
-<Skip step>
-Step4: Variables with low VIF
-<Skip step>

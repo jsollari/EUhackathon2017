@@ -1,4 +1,18 @@
 Sets to variables test for under-representation
-76 variables tested, 0 have p < 0.05 
-Selected set size: 1 
+48 variables tested, 13 have p < 0.05 
+Selected set size: 11 
     Universe size: 276 
+                 vars       pval      adjp odds      exp obs size
+1         disp_income 0.03734465 0.1577621    0 2.789855   0   70
+2           pop_Y0-14 0.03944052 0.1577621    0 2.750000   0   69
+3    emp_Y25-64_ED0-2 0.03944052 0.1577621    0 2.750000   0   69
+4    emp_Y25-64_ED5-8 0.03944052 0.1577621    0 2.750000   0   69
+5              emp_TP 0.03944052 0.1577621    0 2.750000   0   69
+6          emp_Y15-24 0.03944052 0.1577621    0 2.750000   0   69
+7          emp_Y25-64 0.03944052 0.1577621    0 2.750000   0   69
+8  emp_Y25-64_NaceM_N 0.03944052 0.1577621    0 2.750000   0   69
+9  emp_Y25-64_NaceO-Q 0.03944052 0.1577621    0 2.750000   0   69
+10        unemp_YGE25 0.03944052 0.1577621    0 2.750000   0   69
+11                GDP 0.03944052 0.1577621    0 2.750000   0   69
+12           training 0.03944052 0.1577621    0 2.750000   0   69
+13 emp_Y15-24_NaceG-I 0.04638601 0.1651693    0 2.630435   0   66

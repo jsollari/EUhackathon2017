@@ -2,11 +2,11 @@ consensus of 2-../results/regression/nuts0/modsel_lm_nuts0_lmktm_ED3_4_rep1_2
 Method: r / Fitting: lm / IC used: aicc
 Level: 1 / Marginality: FALSE
 From 100 models:
-Best IC: 164.921646091177
+Best IC: 166.763808272709
 Best model:
 [1] "lmktm_ED3_4 ~ 1 + mat_depriv + ARPR_socexcl + emp_Y25_64_NaceK + "
 [2] "    emp_Y25_64_NaceL"                                             
-Evidence weight: 0.121924839811934
-Worst IC: 173.066775975951
+Evidence weight: 0.110973456698366
+Worst IC: 174.909558909594
 2 models within 2 IC units.
-78 models to reach 95% of evidence weight.
+77 models to reach 95% of evidence weight.

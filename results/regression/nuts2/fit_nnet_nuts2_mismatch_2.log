@@ -1,20 +1,21 @@
 
 Call:
-multivar(formula = mismatch ~ 1 + emp_FT + GDP, data = dat1, 
-    size = nn_size, decay = nn_decay, maxit = nn_maxit, abstol = nn_abstol, 
-    reltol = nn_reltol, trace = FALSE)
+multivar(formula = mismatch ~ 1 + pop_Y65_74 + emp_TF + emp_Y15_24 + 
+    emp_Y25_64_NaceB_E + emp_Y25_64_NaceM_N + GDP + disp_income, 
+    data = dat1, size = nn_size, decay = nn_decay, maxit = nn_maxit, 
+    abstol = nn_abstol, reltol = nn_reltol, trace = FALSE)
 
 Residuals:
-            [,1]
-Min    -31.99263
-1Q     -11.47153
-Median  -0.09685
-3Q       7.73816
-Max     78.28675
+           [,1]
+Min    -29.7359
+1Q      -9.0407
+Median  -0.1597
+3Q       7.7667
+Max     46.6234
 
 No Coefficients
 
-Residual standard error: 19.26 on 44 degrees of freedom
-Multiple R-squared:  0.3174,	Adjusted R-squared:  0.2864 
-F-statistic: 10.23 on 2 and 44 DF,  p-value: 0.0002245
+Residual standard error: 15.39 on 37 degrees of freedom
+Multiple R-squared:  0.624,	Adjusted R-squared:  0.5528 
+F-statistic:  8.77 on 7 and 37 DF,  p-value: 2.556e-06
 

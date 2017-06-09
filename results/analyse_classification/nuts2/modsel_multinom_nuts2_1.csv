@@ -1,2 +1,2 @@
 "","model","aic","weights"
-"1","grps ~ 1 + pop_Total + disp_income + training + earn_OC5_P_S",530.402266463072,0.89946997010851
+"1","grps ~ 1 + pop_Total + emp_Y15_24_ED3_4 + emp_Y15_24 + GDP + disp_income + training",449.940703029726,0.945922219714184

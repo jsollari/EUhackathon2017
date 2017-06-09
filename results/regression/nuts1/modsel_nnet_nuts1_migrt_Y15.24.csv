@@ -1,3 +1,0 @@
-"","model","aicc","weights"
-"1","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_Y25_64 + pop_Y65_74 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + training",-173.041216807394,0.612929026552381
-"2","migrt_Y15_24 ~ 1 + pop_Total + pop_Y0_14 + pop_Y25_64 + pop_Y65_74 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED5_8 + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP + training",-172.116839509034,0.386086137822918

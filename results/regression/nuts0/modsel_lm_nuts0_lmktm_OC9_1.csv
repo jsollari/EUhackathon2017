@@ -1,4 +1,3 @@
 "","model","aicc","weights"
-"1","lmktm_OC9 ~ 1 + emp_Y25_64_ED3_4 + emp_PT + emp_Y15_24_NaceB_E + emp_Y25_64_NaceG_I + emp_Y25_64_NaceJ + emp_Y25_64_NaceK + emp_Y25_64_NaceO_Q + emp_Y15_24_NaceR_U + training",187.343341015228,0.167119909030758
-"2","lmktm_OC9 ~ 1 + emp_Y25_64_ED3_4 + emp_PT + emp_Y15_24_NaceB_E + emp_Y25_64_NaceG_I + emp_Y25_64_NaceJ + emp_Y25_64_NaceK + emp_Y25_64_NaceO_Q + emp_Y15_24_NaceR_U",188.21383378733,0.108144163784666
-"3","lmktm_OC9 ~ 1 + emp_PT + emp_Y15_24_NaceB_E + emp_Y25_64_NaceG_I + emp_Y25_64_NaceJ + emp_Y25_64_NaceK + emp_Y25_64_NaceO_Q + emp_Y15_24_NaceR_U",188.48668191391,0.0943528165553702
+"1","lmktm_OC9 ~ 1 + emp_TP + emp_Y15_24_NaceB_E + emp_Y25_64_NaceO_Q + GDP",184.180190552283,0.081833448776937
+"2","lmktm_OC9 ~ 1 + emp_Y15_24_NaceB_E + emp_Y25_64_NaceO_Q + GDP",184.564479746232,0.0675279423058561

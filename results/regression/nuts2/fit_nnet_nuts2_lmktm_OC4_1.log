@@ -1,6 +1,0 @@
-a 7-1-1 network with 10 weights
-options were - linear output units  decay=1e-04
- b->h1 i1->h1 i2->h1 i3->h1 i4->h1 i5->h1 i6->h1 i7->h1 
- -1.33 -16.31   5.56   7.91  -6.35   1.51  -6.47  -2.48 
-  b->o  h1->o 
-  0.49  -0.60 

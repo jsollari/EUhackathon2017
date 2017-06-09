@@ -1,2 +1,0 @@
-"","model","aicc","weights"
-"1","lmktm_OC1 ~ 1 + pop_Y15_24 + pop_Y25_64 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64_NaceO_Q + GDP + training",239.818345936784,0.995218746580755

@@ -1,6 +1,6 @@
 a 0-1-1 network with 5 weights
 options were - linear output units  decay=1e-04
-b->i i->i b->i 
-0.57 0.36 0.39 
+ b->i  i->i  b->i 
+ 0.54  0.37 -0.23 
 b->h1 i->h1 
- 0.33  0.16 
+ 0.30  0.24 

@@ -5,4 +5,4 @@ Selected set size: 3
               vars        pval      adjp odds       exp obs size
 1        pop_Total 0.006105006 0.2319902  Inf 0.6428571   3    6
 2      disp_income 0.006105006 0.2319902  Inf 0.6428571   3    6
-3 emp_Y15-24_NaceK 0.045177045 0.5074786   23 0.4285714   2    4
+3 emp_Y15-24_NaceK 0.045177045 0.5799756   23 0.4285714   2    4

@@ -1,11 +1,11 @@
 glmulti.analysis
 Method: h / Fitting: lm / IC used: aicc
 Level: 1 / Marginality: FALSE
-From 27 models:
+From 29 models:
 Best IC: 42.8970748469433
 Best model:
 [1] "lmktm_OC0 ~ 1"
-Evidence weight: 0.985860617334793
+Evidence weight: 0.876266688194101
 Worst IC: 62.8943887698576
 1 models within 2 IC units.
-0 models to reach 95% of evidence weight.
+1 models to reach 95% of evidence weight.

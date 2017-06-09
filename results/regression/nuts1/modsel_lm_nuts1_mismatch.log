@@ -1,11 +1,11 @@
-glmulti.analysis
-Method: h / Fitting: lm / IC used: aicc
+consensus of 2-../results/regression/nuts1/modsel_lm_nuts1_mismatch_rep1_2
+Method: r / Fitting: lm / IC used: aicc
 Level: 1 / Marginality: FALSE
 From 100 models:
-Best IC: 120.457815837632
+Best IC: 120.266420136043
 Best model:
-[1] "mismatch ~ 1 + pop_Y25_64 + emp_FT"
-Evidence weight: 0.201142585386333
-Worst IC: 129.501770515535
+[1] "mismatch ~ 1 + pop_Y25_64 + emp_TF"
+Evidence weight: 0.188874070310816
+Worst IC: 130.788746566501
 1 models within 2 IC units.
-78 models to reach 95% of evidence weight.
+59 models to reach 95% of evidence weight.

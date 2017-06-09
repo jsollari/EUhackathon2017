@@ -1,2 +1,5 @@
 "","model","aicc","weights"
-"1","migrt_Y25_64 ~ 1 + pop_Total + emp_Y15_24_ED3_4 + emp_Y15_24_ED5_8 + emp_Y25_64_NaceB_E",17.9394498159589,0.111272672899195
+"1","migrt_Y25_64 ~ 1 + pop_Total + emp_Y15_24_ED3_4 + emp_Y15_24_NaceB_E + training",12.5616699146519,0.0826473413941115
+"2","migrt_Y25_64 ~ 1 + pop_Total + pop_YGE75 + emp_Y15_24_ED3_4 + emp_Y15_24_NaceB_E + training",13.5906234358373,0.0494076809100491
+"3","migrt_Y25_64 ~ 1 + pop_Total + emp_Y15_24_ED3_4 + emp_Y15_24_NaceB_E + emp_Y15_24_NaceR_U + training",13.9413673948031,0.0414601994075746
+"4","migrt_Y25_64 ~ 1 + pop_Total + emp_Y25_64_ED0_2 + emp_Y15_24_ED3_4 + emp_Y15_24_NaceB_E + training",14.3396980414642,0.0339730849941805

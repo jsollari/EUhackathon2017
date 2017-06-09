@@ -2,11 +2,11 @@ consensus of 2-../results/regression/nuts0/modsel_lm_nuts0_migrt_Y25.64_rep1_2
 Method: r / Fitting: lm / IC used: aicc
 Level: 1 / Marginality: FALSE
 From 100 models:
-Best IC: 50.4707120455593
+Best IC: 46.5489124282376
 Best model:
-[1] "migrt_Y25_64 ~ 1 + pop_Y15_24 + pop_YGE75 + ARPR_socexcl + emp_Y25_64_NaceF + "
-[2] "    emp_Y25_64_NaceG_I + emp_Y25_64_NaceR_U"                                   
-Evidence weight: 0.0625231223145125
-Worst IC: 56.6777866259934
+[1] "migrt_Y25_64 ~ 1 + pop_Total + pop_Y15_24 + emp_Y15_24_ED5_8 + "
+[2] "    emp_Y25_64_NaceL + emp_Y25_64_NaceR_U"                      
+Evidence weight: 0.0676532005171799
+Worst IC: 52.5122318897561
 7 models within 2 IC units.
 86 models to reach 95% of evidence weight.

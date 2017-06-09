@@ -1,23 +1,23 @@
 
 Call:
-multivar(formula = mismatch ~ 1 + pop_Y15_24 + emp_Y15_24 + emp_Y15_24_NaceM_N, 
+multivar(formula = mismatch ~ 1 + emp_Y15_24 + emp_Y15_24_NaceM_N, 
     data = dat1, size = nn_size, decay = nn_decay, maxit = nn_maxit, 
     abstol = nn_abstol, reltol = nn_reltol, trace = FALSE)
 
 Residuals:
-         [,1]
-[1,] -0.36538
-[2,] -0.19145
-[3,]  0.60677
-[4,] -1.09444
-[5,]  0.04473
-[6,]  1.67316
-[7,]  0.78122
-[8,] -1.42026
+        [,1]
+[1,]  4.6758
+[2,]  3.9707
+[3,]  2.1504
+[4,] -4.9937
+[5,] -5.3588
+[6,] -0.0113
+[7,]  4.7783
+[8,] -5.2223
 
 No Coefficients
 
-Residual standard error: 1.338 on 4 degrees of freedom
-Multiple R-squared:  0.9973,	Adjusted R-squared:  0.9953 
-F-statistic: 499.9 on 3 and 4 DF,  p-value: 1.326e-05
+Residual standard error: 5.404 on 5 degrees of freedom
+Multiple R-squared:  0.9474,	Adjusted R-squared:  0.9263 
+F-statistic: 45.01 on 2 and 5 DF,  p-value: 0.0006352
 

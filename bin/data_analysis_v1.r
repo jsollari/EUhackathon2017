@@ -1,7 +1,7 @@
 #autor:      Joao Sollari Lopes
 #local:      INE, Lisboa
 #criado:     13.03.2017
-#modificado: 17.05.2017
+#modificado: 09.06.2017
 
 #setwd("2017.03.17_BigData/bin/")
 options("width"=130)
@@ -157,12 +157,12 @@ overview_data2 = function(nams1,cnam1){
     }
 }
 
-# Read data from files to a lsit of data frames
+# Read data from files to a lsit of data frames [Use demographic data from 2014]
 # files - files to read data from
 # geo_cat - geographical tags to keep
 # sex_cat - sex categories to keep {"F","M","T"}
 # rem_col - columns to remove from data sets
-read_data = function(files,geo_cat,sex_cat,rem_col){
+read_data_v2 = function(files,geo_cat,sex_cat,rem_col){
     age_cat0 = c("TOTAL")
     age_cat1 = c("Y_LT1","Y1","Y2","Y3","Y4","Y5","Y6","Y7","Y8","Y9","Y10",
       "Y11","Y12","Y13","Y14")
@@ -198,9 +198,8 @@ read_data = function(files,geo_cat,sex_cat,rem_col){
     nace_cat3 = c("B-F","G-N","P-S")
     na_item_cat = c("B6N")
     sizeclas_cat = c("TOTAL")
-    time_cat1 = c(paste("X",1990:2014,sep=""),paste("X",2016:2017,sep=""))
-    time_cat2 = c(paste("X",1990:2012,sep=""),paste("X",2014:2017,sep=""))
-    time_cat3 = c(paste("X",1990:2013,sep=""),paste("X",2015:2017,sep=""))
+    time_cat1 = c(paste("X",1990:2012,sep=""),paste("X",2014:2017,sep=""))
+    time_cat2 = c(paste("X",1990:2013,sep=""),paste("X",2015:2017,sep=""))
     unit_cat1 = c("NR")                     #Number
     unit_cat2 = c("PC_POP")                 #Percentage of total population
     unit_cat3 = c("PC_Y_LT60")              #Percentage of total population aged less than 60
@@ -392,20 +391,14 @@ read_data = function(files,geo_cat,sex_cat,rem_col){
             s15 = dat1[[i1]][,"worktime"] %in% worktime_cat2
         }
         #Time {X1990,...,X2017}
-        if(i1 %in% c("demo_r_d2jan.tsv")){
+        if(i1 %in% c("nama_10r_2hhinc.tsv","educ_uoe_fine06.tsv")){
             s16 = colnames(dat1[[i1]]) %in% time_cat1
-            dat1[[i1]] = dat1[[i1]][s1 & s2 & s3 & s4 & s5 & s6 & s7 & s8 & s9 &
-              s10 & s11 & s12 & s13 & s14 & s15,!s16]
-            dat1[[i1]][,"X2015"] = as.numeric(gsub("[b,c,d,e,f,i,n,p,r,s,u,z]",
-              "",dat1[[i1]][,"X2015"]))
-        }else if(i1 %in% c("nama_10r_2hhinc.tsv","educ_uoe_fine06.tsv")){
-            s16 = colnames(dat1[[i1]]) %in% time_cat2
             dat1[[i1]] = dat1[[i1]][s1 & s2 & s3 & s4 & s5 & s6 & s7 & s8 & s9 &
               s10 & s11 & s12 & s13 & s14 & s15,!s16]
             dat1[[i1]][,"X2013"] = as.numeric(gsub("[b,c,d,e,f,i,n,p,r,s,u,z]",
               "",dat1[[i1]][,"X2013"]))
         }else{
-            s16 = colnames(dat1[[i1]]) %in% time_cat3
+            s16 = colnames(dat1[[i1]]) %in% time_cat2
             dat1[[i1]] = dat1[[i1]][s1 & s2 & s3 & s4 & s5 & s6 & s7 & s8 & s9 &
               s10 & s11 & s12 & s13 & s14 & s15,!s16]
             dat1[[i1]][,"X2014"] = as.numeric(gsub("[b,c,d,e,f,i,n,p,r,s,u,z]",
@@ -505,17 +498,17 @@ read_data = function(files,geo_cat,sex_cat,rem_col){
                 s19 = dat1[[i1]][,"geo"] == i2
                 for(i3 in sex1){
                     s20 = dat1[[i1]][,"sex"] == i3
-                    a1_cat0 = sum(dat1[[i1]][s18_cat0 & s19 & s20,"X2015"],
+                    a1_cat0 = sum(dat1[[i1]][s18_cat0 & s19 & s20,"X2014"],
                       na.rm=FALSE)
-                    a1_cat1 = sum(dat1[[i1]][s18_cat1 & s19 & s20,"X2015"],
+                    a1_cat1 = sum(dat1[[i1]][s18_cat1 & s19 & s20,"X2014"],
                       na.rm=FALSE)
-                    a1_cat2 = sum(dat1[[i1]][s18_cat2 & s19 & s20,"X2015"],
+                    a1_cat2 = sum(dat1[[i1]][s18_cat2 & s19 & s20,"X2014"],
                       na.rm=FALSE)
-                    a1_cat3 = sum(dat1[[i1]][s18_cat3 & s19 & s20,"X2015"],
+                    a1_cat3 = sum(dat1[[i1]][s18_cat3 & s19 & s20,"X2014"],
                       na.rm=FALSE)
-                    a1_cat4 = sum(dat1[[i1]][s18_cat4 & s19 & s20,"X2015"],
+                    a1_cat4 = sum(dat1[[i1]][s18_cat4 & s19 & s20,"X2014"],
                       na.rm=FALSE)
-                    a1_cat5 = sum(dat1[[i1]][s18_cat5 & s19 & s20,"X2015"],
+                    a1_cat5 = sum(dat1[[i1]][s18_cat5 & s19 & s20,"X2014"],
                       na.rm=FALSE)
                     a1 = cbind(rep("NR",6),rep(i3,6),c("TOTAL","Y0-14",
                       "Y15-24","Y25-64","Y65-74","YGE75"),rep(i2,6),
@@ -532,23 +525,19 @@ read_data = function(files,geo_cat,sex_cat,rem_col){
     return(dat1)
 }
 
-# Reshape long format to wide format
+# Reshape long format to wide format [Use demographic data from 2014]
 # dat1 - data frame of variables to be analysed
 # sexbreak - break data by "sex"
-reshape2wide = function(dat1,sexbreak=FALSE){
+reshape2wide_v2 = function(dat1,sexbreak=FALSE){
     dat1w = dat1
     files = names(dat1w)
     for(i1 in files){
         #Age
         nams1 = colnames(dat1w[[i1]])
         if("age" %in% nams1){
-            if(i1 %in% c("demo_r_d2jan.tsv")){
-                vnams1 = grep("X2015",colnames(dat1w[[i1]]),value=TRUE)
-                idvar1 = nams1[-match(c("age",vnams1),nams1)]
-                dat1w[[i1]] = reshape(dat1w[[i1]],timevar="age",v.names=vnams1,
-                  idvar=idvar1,direction="wide",sep="_age_")
-            }else if(i1 %in% c("lfst_r_lfu3pers.tsv","lfst_r_lfe2eedu.tsv",
-              "lfst_r_lfe2emp.tsv","lfst_r_lfe2en2.tsv","migr_emi2.tsv")){
+            if(i1 %in% c("demo_r_d2jan.tsv","lfst_r_lfu3pers.tsv",
+              "lfst_r_lfe2eedu.tsv","lfst_r_lfe2emp.tsv","lfst_r_lfe2en2.tsv",
+              "migr_emi2.tsv")){
                 vnams1 = grep("X2014",colnames(dat1w[[i1]]),value=TRUE)
                 idvar1 = nams1[-match(c("age",vnams1),nams1)]
                 dat1w[[i1]] = reshape(dat1w[[i1]],timevar="age",v.names=vnams1,
@@ -559,13 +548,7 @@ reshape2wide = function(dat1,sexbreak=FALSE){
         if(sexbreak){
             nams1 = colnames(dat1w[[i1]])
             if("sex" %in% nams1){
-                if(i1 %in% c("demo_r_d2jan.tsv")){       
-                    vnams1 = grep("X2015",colnames(dat1w[[i1]]),value=TRUE)
-                    idvar1 = nams1[-match(c("sex",vnams1),nams1)]
-                    dat1w[[i1]] = reshape(dat1w[[i1]],timevar="sex",v.names=vnams1,
-                      idvar=idvar1,direction="wide",sep="_sex_")
-                }else if(i1 %in% c("nama_10r_2hhinc.tsv",
-                  "educ_uoe_fine06.tsv")){       
+                if(i1 %in% c("nama_10r_2hhinc.tsv","educ_uoe_fine06.tsv")){       
                     vnams1 = grep("X2013",colnames(dat1w[[i1]]),value=TRUE)
                     idvar1 = nams1[-match(c("sex",vnams1),nams1)]
                     dat1w[[i1]] = reshape(dat1w[[i1]],timevar="sex",v.names=vnams1,
@@ -974,7 +957,7 @@ f1 = "../results/csv/"
 f2 = "../results/json/"
 f3 = "../results/dat1.RDS"
 if(!file.exists(f3)){
-    dat1 = read_data(files_nuts1,geo_cat,sex_cat,rem_col)
+    dat1 = read_data_v2(files_nuts1,geo_cat,sex_cat,rem_col)
     save(dat1,file=f3)
     for(i1 in files_nuts1){
         f4 = paste(f1,gsub(".tsv",".csv",i1),sep="")
@@ -999,7 +982,7 @@ f1 = "../results/csv/"
 f2 = "../results/json/"
 f3 = "../results/dat2.RDS"
 if(!file.exists(f3)){
-    dat2 = read_data(files_nuts2,geo_cat,sex_cat,rem_col)
+    dat2 = read_data_v2(files_nuts2,geo_cat,sex_cat,rem_col)
     save(dat2,file=f3)
     for(i1 in files_nuts2){
         f4 = paste(f1,gsub(".tsv",".csv",i1),sep="")
@@ -1026,12 +1009,12 @@ if(!file.exists(f3)){
 {
 #### 3.1. RESHAPE TO WIDE FORMAT
 {
-dat1w = reshape2wide(dat1)
+dat1w = reshape2wide_v2(dat1)
 #lapply(dat1w,dim)
 #lapply(dat1w,colnames)
 #table(unlist(lapply(dat1w,colnames)))
 
-dat2w = reshape2wide(dat2)
+dat2w = reshape2wide_v2(dat2)
 #lapply(dat2w,dim)
 #lapply(dat2w,colnames)
 #table(unlist(lapply(dat2w,colnames)))
@@ -1087,7 +1070,7 @@ x7 = dat2w[[8]][s7,3:9]; colnames(x7) = c("geo","emp_Y15-24_ED0-2",
   "emp_Y25-64_ED0-2","emp_Y15-24_ED3-4","emp_Y25-64_ED3-4",
   "emp_Y15-24_ED5-8","emp_Y25-64_ED5-8")
 s8 = dat2w[[9]][,"sex"] == "T"
-x8 = dat2w[[9]][s8,4:6]; colnames(x8) = c("geo","emp_FT","emp_PT")
+x8 = dat2w[[9]][s8,4:6]; colnames(x8) = c("geo","emp_TF","emp_TP")
 s9 = dat2w[[10]][,"sex"] == "T"
 x9 = dat2w[[10]][s9,3:6]; colnames(x9) = c("geo","emp_Y15-24","emp_Y25-64",
   "emp_YGE65")
@@ -1117,36 +1100,51 @@ w_all1 = c(1,rep(1/5,5),1,1,1,1,1,rep(1/6,6),rep(1/2,2),rep(1/3,3),rep(1/20,20),
   rep(1/2,2),1,1,1,1)
 
 ######## 3.2.1.2. Normalize for population size accross regions
-s1 = c(seq(13,17,2),21,seq(24,42,2),44) #pop_Y15-24
-x_all1[,s1] = apply(x_all1[,s1],2,function(x){100*(x*1000)/x_all1[,4]})
+s1 = c(seq(13,17,2),                    #emp_Y15-24_ED[?]
+       seq(24,42,2))                    #emp_Y15-24_Nace[?]
+a1 = x_all1[,21]                        #emp_Y15-24
+x_all1[,s1] = apply(x_all1[,s1],2,function(x){100*(x)/a1}) 
 
-s2 = c(seq(14,18,2),22,seq(25,43,2))    #pop_Y25-64
-x_all1[,s2] = apply(x_all1[,s2],2,function(x){100*(x*1000)/x_all1[,5]})
+s2 = c(seq(14,18,2),                    #emp_Y25-64_ED[?]
+       seq(25,43,2))                    #emp_Y25-64_Nace[?]
+a2 = x_all1[,22]                        #emp_Y25-64
+x_all1[,s2] = apply(x_all1[,s2],2,function(x){100*(x)/a2})
 
-s3 = 45                                 #pop_Y25-74
-a1 = apply(x_all1[,5:6],1,sum)
-x_all1[,s3] = 100*(x_all1[,s3]*1000)/a1
+s3 = c(21,                              #emp_Y15-24
+       44)                              #unemp_Y15-24
+a3 = x_all1[,4]                         #pop_Y15-24
+x_all1[,s3] = apply(x_all1[,s3],2,function(x){100*(x*1000)/a3})
 
-s4 = c(19:20)                           #pop_YGE15
-a2 = apply(x_all1[,4:6],1,sum)
-x_all1[,s4] = apply(x_all1[,s4],2,function(x){100*(x*1000)/a2})
+s4 = c(22)                              #emp_Y25-64
+a4 = x_all1[,5]                         #pop_Y25-64
+x_all1[,s4] = 100*(x_all1[,s4]*1000)/a4
 
-s5 = 23                                 #pop_YGE65
-a3 = apply(x_all1[,6:7],1,sum)
-x_all1[,s5] = 100*(x_all1[,s5]*1000)/a3
+s5 = 45                                 #unemp_Y25-74
+a5 = apply(x_all1[,5:6],1,sum)          #pop_Y25-74
+x_all1[,s5] = 100*(x_all1[,s5]*1000)/a5
 
-s6 = c(3:7)                             #pop_Total
-x_all1[,s6] = apply(x_all1[,s6],2,function(x){100*(x)/x_all1[,2]})
+s6 = c(19:20)                           #emp_T[?]
+a6 = apply(x_all1[,4:6],1,sum)          #pop_YGE15
+x_all1[,s6] = apply(x_all1[,s6],2,function(x){100*(x*1000)/a6})
+
+s7 = 23                                 #emp_YGE65
+a7 = apply(x_all1[,6:7],1,sum)          #pop_YGE65
+x_all1[,s7] = 100*(x_all1[,s7]*1000)/a7
+
+s8 = c(3:7)                             #pop_Y[?]
+a8 = x_all1[,2]                         #pop_Total
+x_all1[,s8] = apply(x_all1[,s8],2,function(x){100*(x)/a8})
 
 ###### 3.2.2. Predictors at NUTS0-level
 s1 = match(substr(x_all1[,"geo"],1,2),dat1w[[1]][,"geo"]) #map NUTS0 to x_all
-x_all2 = dat1w[[1]][s1,5:31]; colnames(x_all2) = c("earn_OC1_B-F",
-  "earn_OC2_B-F","earn_OC3_B-F","earn_OC4_B-F","earn_OC5_B-F","earn_OC6_B-F",
-  "earn_OC7_B-F","earn_OC8_B-F","earn_OC9_B-F","earn_OC1_G-N","earn_OC2_G-N",
-  "earn_OC3_G-N","earn_OC4_G-N","earn_OC5_G-N","earn_OC6_G-N","earn_OC7_G-N",
-  "earn_OC8_G-N","earn_OC9_G-N","earn_OC1_P-S","earn_OC2_P-S","earn_OC3_P-S",
-  "earn_OC4_P-S","earn_OC5_P-S","earn_OC6_P-S","earn_OC7_P-S","earn_OC8_P-S",
-  "earn_OC9_P-S")
+x_all2 = dat1w[[1]][s1,5:31]; colnames(x_all2) = c("earn_OC1_NaceB-F",
+  "earn_OC2_NaceB-F","earn_OC3_NaceB-F","earn_OC4_NaceB-F","earn_OC5_NaceB-F",
+  "earn_OC6_NaceB-F","earn_OC7_NaceB-F","earn_OC8_NaceB-F","earn_OC9_NaceB-F",
+  "earn_OC1_NaceG-N","earn_OC2_NaceG-N","earn_OC3_NaceG-N","earn_OC4_NaceG-N",
+  "earn_OC5_NaceG-N","earn_OC6_NaceG-N","earn_OC7_NaceG-N","earn_OC8_NaceG-N",
+  "earn_OC9_NaceG-N","earn_OC1_NaceP-S","earn_OC2_NaceP-S","earn_OC3_NaceP-S",
+  "earn_OC4_NaceP-S","earn_OC5_NaceP-S","earn_OC6_NaceP-S","earn_OC7_NaceP-S",
+  "earn_OC8_NaceP-S","earn_OC9_NaceP-S")
 w_all2 = rep(1/27,27)
 
 s2 = match(substr(x_all1[,"geo"],1,2),dat1w[[2]][,"geo"]) #map NUTS0 to x_all
@@ -1332,8 +1330,10 @@ col1 = col0[match(substring(geo_cat1,1,2),names(col0))]
 names(col1) = geo_cat1
 col2 = col0[match(substring(geo_cat2,1,2),names(col0))]
 names(col2) = geo_cat2
-xunits = c("NR",rep("PC_POP",6),"PC_YLT60","AVG",rep("PC_POP",8),rep("PC_YGE15",
-  2),rep("PC_POP",23),"PC_YGE15-LE24","PC_YGE25-LE74","PPS_HAB","PCH_PRE",
+xunits = c("NR",rep("PC_POP",6),"PC_YLE60","AVG",rep("PC_POP",2),
+  rep(c("PC_EMP_Y15-24","PC_EMP_Y25-64"),3),rep("PC_YGE15",2),"PC_POP_Y15-24",
+  "PC_POP_Y25-64","PC_POP_YGE65",rep(c("PC_EMP_Y15-24","PC_EMP_Y25-64"),10),
+  "PC_YGE15-LE24","PC_YGE25-LE74","PPS_HAB","PCH_PRE",
   "PPCS_HAB","PC_YGE25-LE64",rep("MN_PPS",27),"PC_GDP")
 names(xunits) = colnames(x_all)
 yunits = c("DIFF",rep("PC_EMP",14),rep("PC_POP",3))
@@ -1358,6 +1358,7 @@ x_all_max[49:75] = max(x_all[,49:75],na.rm=TRUE) #earn_???_???
 #### 4.1. NUTS0-LEVEL (COUNTRY-LEVEL)
 {
 y_all_nuts0 = cbind(y1_nuts0,y2_nuts0,y3_nuts0)
+w_all_nuts0 = w_all
 
 ###### 4.1.1. Summary statistics
 f1 = "../results/data_overview/nuts0/descr_x_nuts0.csv"
@@ -1378,7 +1379,7 @@ plot_barplot(t(y1_educ_nuts0)[-1,],t(y1_jobv_nuts0)[-1,],ylab1="Skills supply",
   ylab2="Skills demand",main="NUTS0",f1=f1)
   
 ###### 4.1.4. Distances between regions
-a1 = t(apply(scale(x_all_nuts0),1,function(x){x*w_all}))
+a1 = t(apply(scale(x_all_nuts0),1,function(x){x*w_all_nuts0}))
 x_dist_nuts0 = dist(a1,method="euclidean")
 
 ###### 4.1.5. Correlation
@@ -1402,9 +1403,13 @@ plot_sna_v2(x_dist_nuts0,col1=col0,edge_thr=0.65,f1=f1,
 analyse_net(x_dist_nuts0,f1=f1)
 f1 = "../results/data_overview/nuts0/pam_nuts0"
 plot_pam_v2(x_dist_nuts0,col1=col0,f1=f1,main="Labour market attractiveness")
+kbest = 10
+f1 = paste("../results/data_overview/nuts0/pam_nuts0_grps",kbest,sep="")
+plot_pam_v2(x_dist_nuts0,kbest=kbest,col1=col0,f1=f1,
+  main="Labour market attractiveness")
 
 ###### 4.1.7. Study classification analysis
-f1 = "../results/data_overview/nuts0/pam_nuts0_3.csv"
+f1 = "../results/data_overview/nuts0/pam_nuts0_grps10_3.csv"
 a1 = read.csv(f1)
 clst1 = a1[,"cluster"]
 clst1 = factor(clst1,levels=sort(unique(clst1)))
@@ -1583,7 +1588,7 @@ f4 = paste(f1,"_subjInfo.csv",sep="")
 f5 = paste(f1,"_varInfo.csv",sep="")
 if(!file.exists(f2) | !file.exists(f3) | !file.exists(f4) | !file.exists(f5)){
     analyse_WCNA_v2(x_reduced,y_reduced,mins1=2,spl1=4,meth1="hybrid",
-      cut1=0.05,pwr=NULL,pwrrg=0.70,f1=f1)
+      cut1=0.2,pwr=NULL,pwrrg=0.90,f1=f1)
 }
 
 ###### 4.1.10. Multivariate linear [General LM] and non-linear [ANN] regression
@@ -1710,7 +1715,19 @@ for(i1 in colnames(y_all_nuts0)){
 }
 #### 4.2. NUTS1-LEVEL
 {
-y_all_nuts1 = cbind(y1_nuts1,y2_nuts1,y3_nuts1)
+rm_x_NUTS0 = TRUE                       #remove x-vars at NUTS0-level
+rm_y_NUTS0 = TRUE                       #remove y-vars at NUTS0-level
+if(rm_x_NUTS0){
+    x_all_nuts1 = x_all_nuts1[,-c(49:76)]
+    w_all_nuts1 = w_all[-c(49:76)]
+}else{
+    w_all_nuts1 = w_all
+}
+if(rm_y_NUTS0){
+    y_all_nuts1 = y1_nuts1
+}else{
+    y_all_nuts1 = cbind(y1_nuts1,y2_nuts1,y3_nuts1)
+}
 
 ###### 4.2.1. Summary statistics
 f1 = "../results/data_overview/nuts1/descr_x_nuts1.csv"
@@ -1721,13 +1738,13 @@ describe_data_2(y_all_nuts1,f1)
 ###### 4.2.2. Scatterplots
 f1 = "../results/data_overview/nuts1/descr_x_nuts1"
 legend1 = col0; names(legend1) = geo_cat0
-plot_data(x_all_nuts1[,1:48],col1=col1,units1=xunits,legend1=legend1,f1=f1,
+plot_data(x_all_nuts1,col1=col1,units1=xunits,legend1=legend1,f1=f1,
   rm_ylab=FALSE,rm_main=FALSE)
 
 f1 = "../results/data_overview/nuts1/descr_y_nuts1"
 legend1 = col0; names(legend1) = geo_cat0
-plot_data(y_all_nuts1[,1,drop=FALSE],col1=col1,units1=yunits,legend1=legend1,
-  f1=f1,rm_ylab=FALSE,rm_main=FALSE)
+plot_data(y_all_nuts1,col1=col1,units1=yunits,legend1=legend1,f1=f1,
+  rm_ylab=FALSE,rm_main=FALSE)
 
 ###### 4.2.3. Barplots
 f1 = "../results/data_overview/nuts1/lmkt_mismatch_nuts1"
@@ -1735,7 +1752,7 @@ plot_barplot(t(y1_educ_nuts1)[-1,],t(y1_jobv_nuts1)[-1,],border=NA,
   ylab1="Skills supply",ylab2="Skills demand",main="NUTS1",cex_names=0.8,f1=f1)
 
 ###### 4.2.4. Distances between regions
-a1 = t(apply(scale(x_all_nuts1),1,function(x){x*w_all}))
+a1 = t(apply(scale(x_all_nuts1),1,function(x){x*w_all_nuts1}))
 x_dist_nuts1 = dist(a1,method="euclidean")
 
 ###### 4.2.5. Correlation
@@ -1743,7 +1760,7 @@ x_dist_nuts1 = dist(a1,method="euclidean")
 ######## 4.2.5.1. Correlation between predictors
 f1 = "../results/data_overview/nuts1/cor_x_nuts1"
 x_cor_nuts1 = calc_cor(x_all_nuts1,f1=f1)
-plot_levelplots_cor_v2(x_cor_nuts1,reord=FALSE,rm_xlab=TRUE,rm_ylab=TRUE,f1=f1,
+plot_levelplots_cor_v2(x_cor_nuts1,reord=FALSE,rm_xlab=FALSE,rm_ylab=FALSE,f1=f1,
   main="NUTS1")
 
 ######## 4.2.5.2 Correlation between response and predictors
@@ -1759,13 +1776,13 @@ plot_sna_v2(x_dist_nuts1,col1=col1,edge_thr=0.8,label_cex=0.5,f1=f1,
 analyse_net(x_dist_nuts1,f1=f1)
 f1 = "../results/data_overview/nuts1/pam_nuts1"
 plot_pam_v2(x_dist_nuts1,col1=col1,f1=f1,main="Labour market attractiveness")
-kbest = 23
+kbest = 21
 f1 = paste("../results/data_overview/nuts1/pam_nuts1_grps",kbest,sep="")
 plot_pam_v2(x_dist_nuts1,kbest=kbest,col1=col1,f1=f1,
   main="Labour market attractiveness")
 
 ###### 4.2.7. Study classification analysis
-f1 = "../results/data_overview/nuts1/pam_nuts1_grps23_3.csv"
+f1 = "../results/data_overview/nuts1/pam_nuts1_grps21_3.csv"
 a1 = read.csv(f1)
 clst1 = a1[,"cluster"]
 clst1 = factor(clst1,levels=sort(unique(clst1)))
@@ -1948,7 +1965,7 @@ f4 = paste(f1,"_subjInfo.csv",sep="")
 f5 = paste(f1,"_varInfo.csv",sep="")
 if(!file.exists(f2) | !file.exists(f3) | !file.exists(f4) | !file.exists(f5)){
     analyse_WCNA_v2(x_reduced,y_reduced,mins1=2,spl1=4,meth1="hybrid",
-      cut1=0.05,pwr=NULL,pwrrg=0.70,f1=f1)
+      cut1=0.2,pwr=NULL,pwrrg=0.90,f1=f1)
 }
 
 ###### 4.2.10. Multivariate linear [General LM] and non-linear [ANN] regression
@@ -1961,8 +1978,9 @@ f4 = "../results/regression/nuts1/fit_lm_nuts1"
 f5 = "../results/regression/nuts1/modsel_nnet_nuts1"
 f6 = "../results/regression/nuts1/fit_nnet_nuts1"
 opt_nnet = TRUE
-ina = apply(x_all_nuts1,2,function(x){any(is.na(x))})
-x_complete = x_all_nuts1[,!ina]
+x_complete = remove_na(x_all_nuts1,init=2,plotit=FALSE,verbose=FALSE)
+ina1 = !rownames(x_all_nuts1) %in% rownames(x_complete)
+ina2 = !colnames(x_all_nuts1) %in% colnames(x_complete)
 for(i1 in colnames(y_all_nuts1)){
     y = y_all_nuts1[,i1,drop=FALSE]
     if(is.null(levels(y[,1]))){
@@ -1975,9 +1993,9 @@ for(i1 in colnames(y_all_nuts1)){
           colnames(x_complete),
           summary(x_complete),
           file=f7,append=FALSE,type="output")
-        ina = is.na(y[,1])
-        y = y[!ina,,drop=FALSE]
-        x = x_complete[!ina,]
+        ina3 = is.na(y[,1]) 
+        y = y[!(ina1 | ina3),,drop=FALSE]
+        x = x_all_nuts1[!(ina1 | ina3),!ina2]
         capture.output(
           dim(x),
           rownames(x),
@@ -2070,7 +2088,19 @@ for(i1 in colnames(y_all_nuts1)){
 }
 #### 4.3. NUTS2-LEVEL
 {
-y_all_nuts2 = cbind(y1_nuts2,y2_nuts2,y3_nuts2)
+rm_x_NUTS0 = TRUE                       #remove x-vars at NUTS0-level
+rm_y_NUTS0 = TRUE                       #remove y-vars at NUTS0-level
+if(rm_x_NUTS0){
+    x_all_nuts2 = x_all_nuts2[,-c(49:76)]
+    w_all_nuts2 = w_all[-c(49:76)]
+}else{
+    w_all_nuts2 = w_all
+}
+if(rm_y_NUTS0){
+    y_all_nuts2 = y1_nuts2
+}else{
+    y_all_nuts2 = cbind(y1_nuts2,y2_nuts2,y3_nuts2)
+}
 
 ###### 4.3.1. Summary statistics
 f1 = "../results/data_overview/nuts2/descr_x_nuts2.csv"
@@ -2081,7 +2111,7 @@ describe_data_2(y_all_nuts2,f1)
 ###### 4.3.2. Scatterplots
 f1 = "../results/data_overview/nuts2/descr_x_nuts2"
 legend1 = col0; names(legend1) = geo_cat0
-plot_data(x_all_nuts2[,1:48],col1=col2,units1=xunits,legend1=legend1,f1=f1,
+plot_data(x_all_nuts2,col1=col2,units1=xunits,legend1=legend1,f1=f1,
   rm_ylab=FALSE,rm_main=FALSE)
 
 f1 = "../results/data_overview/nuts2/descr_y_nuts2"
@@ -2095,7 +2125,7 @@ plot_barplot(t(y1_educ_nuts2)[-1,],t(y1_jobv_nuts2)[-1,],border=NA,
   ylab1="Skills supply",ylab2="Skills demand",main="NUTS2",cex_names=0.3,f1=f1)
 
 ###### 4.3.4. Distances between regions
-a1 = t(apply(scale(x_all_nuts2),1,function(x){x*w_all}))
+a1 = t(apply(scale(x_all_nuts2),1,function(x){x*w_all_nuts2}))
 x_dist_nuts2 = dist(a1,method="euclidean")
 
 ###### 4.3.5. Correlation
@@ -2103,8 +2133,8 @@ x_dist_nuts2 = dist(a1,method="euclidean")
 ######## 4.3.5.1. Correlation between predictors
 f1 = "../results/data_overview/nuts2/cor_x_nuts2"
 x_cor_nuts2 = calc_cor(x_all_nuts2,f1=f1)
-plot_levelplots_cor_v2(x_cor_nuts2,reord=FALSE,rm_xlab=TRUE,rm_ylab=TRUE,f1=f1,
-  main="NUTS2")
+plot_levelplots_cor_v2(x_cor_nuts2,reord=FALSE,rm_xlab=FALSE,rm_ylab=FALSE,
+  f1=f1,main="NUTS2")
 
 ######## 4.3.5.2 Correlation between response and predictors
 f1 = "../results/data_overview/nuts2/cor_xy_nuts2"
@@ -2114,19 +2144,19 @@ plot_levelplots_cor_v2(xy_cor_nuts2,stat="padj",reord=FALSE,mirror=FALSE,
 
 ###### 4.3.6. Classification analysis
 f1 = "../results/data_overview/nuts2/net_nuts2"
-plot_sna_v2(x_dist_nuts2,col1=col2,edge_thr=0.9,label_cex=0.3,f1=f1,
+plot_sna_v2(x_dist_nuts2,col1=col2,edge_thr=0.95,label_cex=0.3,f1=f1,
   main="Labour market attractiveness")
 analyse_net(x_dist_nuts2,f1=f1)
 f1 = "../results/data_overview/nuts2/pam_nuts2"
 plot_pam_v2(x_dist_nuts2,col1=col2,border=NA,f1=f1,
   main="Labour market attractiveness")
-kbest = 38
+kbest = 25
 f1 = paste("../results/data_overview/nuts2/pam_nuts2_grps",kbest,sep="")
 plot_pam_v2(x_dist_nuts2,kbest=kbest,col1=col2,border=NA,f1=f1,
   main="Labour market attractiveness")
 
 ###### 4.3.7. Study classification analysis
-f1 = "../results/data_overview/nuts2/pam_nuts2_grps38_3.csv"
+f1 = "../results/data_overview/nuts2/pam_nuts2_grps25_3.csv"
 a1 = read.csv(f1)
 clst1 = a1[,"cluster"]
 clst1 = factor(clst1,levels=sort(unique(clst1)))
@@ -2309,7 +2339,7 @@ f4 = paste(f1,"_subjInfo.csv",sep="")
 f5 = paste(f1,"_varInfo.csv",sep="")
 if(!file.exists(f2) | !file.exists(f3) | !file.exists(f4) | !file.exists(f5)){
     analyse_WCNA_v2(x_reduced,y_reduced,mins1=2,spl1=4,meth1="hybrid",
-      cut1=0.05,pwr=NULL,pwrrg=0.70,f1=f1)
+      cut1=0.2,pwr=NULL,pwrrg=0.90,f1=f1)
 }
 
 ###### 4.3.10. Multivariate linear [General LM] and non-linear [ANN] regression
@@ -2322,8 +2352,9 @@ f4 = "../results/regression/nuts2/fit_lm_nuts2"
 f5 = "../results/regression/nuts2/modsel_nnet_nuts2"
 f6 = "../results/regression/nuts2/fit_nnet_nuts2"
 opt_nnet = TRUE
-ina = apply(x_all_nuts2,2,function(x){any(is.na(x))})
-x_complete = x_all_nuts2[,!ina]
+x_complete = remove_na(x_all_nuts2,init=2,plotit=FALSE,verbose=FALSE)
+ina1 = !rownames(x_all_nuts2) %in% rownames(x_complete)
+ina2 = !colnames(x_all_nuts2) %in% colnames(x_complete)
 for(i1 in colnames(y_all_nuts2)){
     y = y_all_nuts2[,i1,drop=FALSE]
     if(is.null(levels(y[,1]))){
@@ -2336,9 +2367,9 @@ for(i1 in colnames(y_all_nuts2)){
           colnames(x_complete),
           summary(x_complete),
           file=f7,append=FALSE,type="output")
-        ina = is.na(y[,1])
-        y = y[!ina,,drop=FALSE]
-        x = x_complete[!ina,]
+        ina3 = is.na(y[,1]) 
+        y = y[!(ina1 | ina3),,drop=FALSE]
+        x = x_all_nuts2[!(ina1 | ina3),!ina2]
         capture.output(
           dim(x),
           rownames(x),

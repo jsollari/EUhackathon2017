@@ -5,7 +5,7 @@ From 100 models:
 Best IC: 54.0422785529897
 Best model:
 [1] "lmktm_OC6 ~ 1 + low_work + ARPR_socexcl"
-Evidence weight: 0.607081671470316
-Worst IC: 77.7164853666058
+Evidence weight: 0.574458703208669
+Worst IC: 72.7616174094259
 2 models within 2 IC units.
-3 models to reach 95% of evidence weight.
+7 models to reach 95% of evidence weight.

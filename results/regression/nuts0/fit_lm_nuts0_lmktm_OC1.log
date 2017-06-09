@@ -3,22 +3,22 @@ Call:
 lm(formula = form1, data = dat1)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--6.0917 -1.4360  0.4782  2.1323  4.4348 
+   Min     1Q Median     3Q    Max 
+-7.490 -2.864  0.402  2.434  6.426 
 
 Coefficients:
                    Estimate Std. Error t value Pr(>|t|)    
-(Intercept)        107.8635    15.8963   6.785 1.29e-05 ***
-pop_Y15_24          -6.2832     1.1289  -5.566 9.14e-05 ***
-low_work            -2.1306     0.3951  -5.392 0.000123 ***
-emp_Y15_24_ED5_8     2.1071     0.3964   5.315 0.000140 ***
-emp_Y15_24_NaceB_E  -2.9687     0.5441  -5.456 0.000110 ***
-emp_Y25_64_NaceK     7.2725     0.6367  11.422 3.77e-08 ***
-unemp_Y15_24        -1.0780     0.3800  -2.837 0.014001 *  
+(Intercept)        -19.9813    21.4831  -0.930 0.369272    
+pop_Y0_14            2.2800     1.0007   2.279 0.040230 *  
+pop_Y15_24          -3.6696     1.0913  -3.363 0.005097 ** 
+emp_Y25_64           1.0194     0.2232   4.567 0.000529 ***
+emp_Y15_24_NaceB_E  -0.8549     0.2151  -3.974 0.001589 ** 
+emp_Y25_64_NaceK     6.1131     0.4700  13.006 7.91e-09 ***
+emp_Y25_64_NaceM_N  -3.6369     0.8535  -4.261 0.000928 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 3.728 on 13 degrees of freedom
-Multiple R-squared:  0.9703,	Adjusted R-squared:  0.9566 
-F-statistic: 70.81 on 6 and 13 DF,  p-value: 3.571e-09
+Residual standard error: 4.606 on 13 degrees of freedom
+Multiple R-squared:  0.9547,	Adjusted R-squared:  0.9338 
+F-statistic: 45.65 on 6 and 13 DF,  p-value: 5.423e-08
 

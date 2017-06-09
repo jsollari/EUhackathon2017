@@ -1,2 +1,0 @@
-"","model","aicc","weights"
-"1","migrt_Total ~ 1 + pop_Total + pop_Y0_14 + pop_Y15_24 + pop_Y25_64 + pop_YGE75 + emp_Y25_64_ED0_2 + emp_Y25_64_ED3_4 + emp_Y25_64_ED5_8 + emp_FT + emp_PT + emp_Y25_64 + emp_Y25_64_NaceG_I + emp_Y25_64_NaceO_Q + GDP",-816.752896830379,0.641011714896233

@@ -7,12 +7,12 @@ multivar(formula = lmktm_OC6 ~ 1 + low_work + ARPR_socexcl, data = dat1,
 Residuals:
         [,1]
 [1,]  1.5518
-[2,] -0.6311
-[3,]  1.7744
+[2,] -0.6310
+[3,]  1.7745
 [4,] -0.4655
 [5,] -0.8568
 [6,] -2.7664
-[7,]  1.3847
+[7,]  1.3846
 
 No Coefficients
 
